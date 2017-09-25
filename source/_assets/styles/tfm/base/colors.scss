@@ -1,0 +1,15 @@
+// ==================================================================
+// TFM Base Colors
+//
+// More color variables can be viewed in variables/variables.css
+//
+
+h1            { color: $tfm-primary-color; }
+.home h1      { color: $tfm-dark; }
+
+a             { color: $tfm-primary-color; transition: color 0.2s ease; }
+a:hover       { color: $tfm-tertiary-color; }
+
+hr            { border-color: $tfm-muted-color; }
+
+.tfm-btn      { color: $tfm-primary-color; }

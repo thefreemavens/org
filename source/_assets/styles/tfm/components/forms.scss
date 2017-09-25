@@ -1,0 +1,382 @@
+// ==================================================================
+// TFM Components - Forms
+//
+
+$body-bg: $tfm-light;
+
+// // Shadows
+// $shadow-inset: inset 0 2px 2px 0 rgba(0,0,0,.14);
+// $shadow-0: 0 0 1px rgba(0, 0, 0, 0);
+// $shadow-2: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+// $shadow-3: 0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+// $shadow-4: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+// $shadow-6: 0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
+// $shadow-8: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+
+// Font Sizes
+// $tfm-h0-s: 1rem !default;
+$tfm-active-font-size: $tfm-h7 !default;
+$tfm-active-top: -$tfm-h0 !default;
+
+// Margin & Paddings
+$tfm-gap: $tfm-h0-s * 1.5 !default;
+$tfm-spacer: $tfm-h0-s / 8 !default;
+$tfm-fieldset-margin: 0 0 $tfm-gap * 2 !default;
+$tfm-checkbox-gap: $tfm-h0-s * 2 !default;
+$tfm-checkbox-top: 0 !default;
+$tfm-radio-margin: $tfm-h0-s / -4 !default;
+
+// Colors
+$tfm-input-color: #333 !default;
+$tfm-border-color: $tfm-muted-color !default;
+$tfm-label-color: darken($tfm-border-color, 100%) !default;
+$tfm-active-color: darken($tfm-border-color, 10%) !default;
+$tfm-focus-color: $tfm-primary-color !default;
+$tfm-error-color: #d9534f !default;
+
+// Animation
+$tfm-transition-speed: 0.2s !default;
+
+
+// The Styles for the form
+
+.tfm-form {
+  margin: $tfm-gap * $tfm-gr 0 $tfm-gap * $tfm-gr * $tfm-gr;
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+fieldset {
+  margin: $tfm-fieldset-margin;
+  padding: 0;
+  border: none;
+}
+
+.form-radio,
+.form-group {
+  position: relative;
+  margin-top: ($tfm-gap * 2);
+  margin-bottom: ($tfm-gap * 2);
+}
+
+.form-inline {
+  > .form-group,
+  > .btn {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+.form-help {
+  margin-top: $tfm-spacer;
+  margin-left: $tfm-spacer;
+  color: $tfm-label-color;
+  font-size: $tfm-active-font-size;
+
+  .checkbox &,
+  .form-radio &,
+  .form-group & {
+    position: absolute;
+    width: 100%;
+  }
+
+  .checkbox & {
+    position: relative;
+    margin-bottom: $tfm-h0-s;
+  }
+
+  .form-radio & {
+    padding-top: ($tfm-spacer * 2);
+    margin-top: -$tfm-h0-s;
+  }
+}
+
+.form-group {
+  // scss-lint:disable QualifyingElement, NestingDepth
+  input {
+    height: ($tfm-h0-s * 1.9);
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  select {
+    width: 100%;
+    font-size: $tfm-h0-s;
+    height: ($tfm-h0-s * 1.6);
+    padding: $tfm-spacer $tfm-spacer ($tfm-spacer / 2);
+    background: none;
+    border: none;
+    line-height: 1.6;
+    box-shadow: none;
+  }
+
+  .control-label {
+    position: absolute;
+    top: ($tfm-h0-s / 10);
+    pointer-events: none;
+    padding-left: $tfm-spacer;
+    z-index: 1;
+    color: $tfm-label-color;
+    font-size: $tfm-h0-s;
+    font-weight: $tfm-body-font-weight;
+    transition: all $tfm-transition-speed ease;
+  }
+
+  .bar {
+    position: relative;
+    border-bottom: ($tfm-h0-s / 16) solid $tfm-border-color;
+    display: block;
+    
+    &::before {
+      content: '';
+      height: ($tfm-h0-s / 8);
+      width: 0;
+      left: 50%;
+      bottom: ($tfm-h0-s / -16);
+      position: absolute;
+      background: $tfm-focus-color;
+      transition: left $tfm-transition-speed ease, width $tfm-transition-speed ease;
+      z-index: 2;
+    }
+  }
+
+  input,
+  textarea {
+    display: block;
+    background: none;
+    padding: $tfm-spacer $tfm-spacer ($tfm-spacer / 2);
+    font-size: $tfm-h0-s;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    transition: all $tfm-transition-speed ease;
+    box-shadow: none;
+  }
+
+  input[type="file"] {
+    line-height: 1;
+
+    ~ .bar {
+      display: none;
+    }
+  }
+
+  select,
+  input:focus,
+  input:valid,
+  input.form-file,
+  input.has-value,
+  textarea:focus,
+  textarea:valid,
+  textarea.form-file,
+  textarea.has-value {
+    color: $tfm-input-color;
+
+    ~ .control-label {
+      font-size: $tfm-active-font-size;
+      color: $tfm-active-color;
+      top: $tfm-active-top;
+      left: 0;
+    }
+  }
+
+  select,
+  input,
+  textarea {
+    &:focus {
+      outline: none;
+
+      ~ .control-label {
+        color: $tfm-focus-color;
+      }
+
+      ~ .bar {
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Radio & Checkbox
+.checkbox,
+.form-radio {
+  label {
+    position: relative;
+    cursor: pointer;
+    padding-left: $tfm-checkbox-gap;
+    text-align: left;
+    color: $tfm-input-color;
+    display: block;
+  }
+
+  input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.radio {
+  margin-bottom: $tfm-h0-s;
+
+  .helper {
+    position: absolute;
+    top: 2px;
+    left: $tfm-radio-margin;
+    cursor: pointer;
+    display: block;
+    font-size: $tfm-h0-s;
+    user-select: none;
+    color: $tfm-border-color;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: ($tfm-spacer * 2);
+      width: $tfm-h0-s;
+      height: $tfm-h0-s;
+      transition: transform $tfm-transition-speed ease;
+      border-radius: 50%;
+      border: ($tfm-h0-s / 8) solid currentColor;
+    }
+
+    &::after {
+      transform: scale(0);
+      background-color: $tfm-focus-color;
+      border-color: $tfm-focus-color;
+    }
+  }
+
+  label:hover .helper {
+    color: $tfm-focus-color;
+  }
+
+  // scss-lint:disable QualifyingElement, NestingDepth
+  input:checked {
+    ~ .helper {
+      &::after {
+          transform: scale(0.5);
+      }
+      &::before {
+        color: $tfm-focus-color;
+      }
+    }
+  }
+}
+
+.checkbox {
+  // scss-lint:disable QualifyingElement
+  
+  margin-top: ($tfm-gap * 2);
+  margin-bottom: $tfm-h0-s;
+  
+  .helper {
+    color: $tfm-border-color;
+    position: absolute;
+    // top: $tfm-checkbox-top;
+    top: 6px;
+    left: 0;
+    width: $tfm-h0-s;
+    height: $tfm-h0-s;
+    z-index: 0;
+    border: ($tfm-h0-s / 8) solid currentColor;
+    border-radius: ($tfm-h0-s / 16);
+    transition: border-color $tfm-transition-speed ease;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      height: 0;
+      width: ($tfm-h0-s * 0.2);
+      background-color: $tfm-focus-color;
+      display: block;
+      transform-origin: left top;
+      border-radius: ($tfm-h0-s / 4);
+      content: '';
+      transition: opacity $tfm-transition-speed ease, height 0s linear $tfm-transition-speed;
+      opacity: 0;
+    }
+    
+    &::before {
+      top: ($tfm-h0-s * 0.65);
+      left: ($tfm-h0-s * 0.38);
+      transform: rotate(-135deg);
+      // box-shadow: 0 0 0 ($tfm-h0-s / 16) $body-bg;
+    }
+
+    &::after {
+      top: ($tfm-h0-s * 0.3);
+      left: 0;
+      transform: rotate(-45deg);
+    }
+  }
+  
+  label:hover .helper {
+    color: $tfm-focus-color;
+  }
+  
+  input:checked {
+    ~ .helper {
+      color: $tfm-focus-color;
+      
+      &::after,
+      &::before {
+        opacity: 1;
+        transition: height $tfm-transition-speed ease;
+      }
+
+      &::after {
+        height: ($tfm-h0-s / 2);
+      }
+
+      &::before {
+        height: ($tfm-h0-s * 1.2);
+        transition-delay: $tfm-transition-speed;
+      }
+    }
+  }
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: $tfm-h0-s;
+}
+
+.has-error {
+  .legend.legend,
+  &.form-group .control-label.control-label {
+    // Prevent !importantRule
+    color: $tfm-error-color;
+  }
+  
+  &.form-group,
+  &.checkbox,
+  &.radio,
+  &.form-radio {
+    .form-help,
+    .helper {
+      color: $tfm-error-color;
+    }
+  }
+  
+  .bar {
+    &::before {
+      background: $tfm-error-color;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

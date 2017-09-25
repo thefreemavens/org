@@ -1,0 +1,14 @@
+// ==================================================================
+// TFM Footer
+//
+footer        { width: 100%; text-align: center; }
+
+// ==================================================================
+// Sticky footer styles
+//
+$height-footer: 100px;
+
+html          { min-height: 100%; position: relative; }
+body          { margin-bottom: $height-footer; }
+footer        { bottom: 0; position: absolute; height: $height-footer; }
+.tfm-content  { padding-bottom: 50px; }

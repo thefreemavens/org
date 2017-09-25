@@ -1,0 +1,118 @@
+// ==================================================================
+// TFM: Components / Main Menu 
+//
+
+.tfm-menu {
+  @extend .tfm-valign;
+  font-size: $tfm-h3;
+  // font-family: $tfm-primary-font;
+  font-family: $tfm-secondary-font;
+  font-weight: $tfm-body-font-weight;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  background: $tfm-light;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  text-align: center;
+  transition: visibility 0.2s ease, opacity 0.4s ease;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// Remove bullets from menu links
+ul.tfm-menu-links {
+  @extend .tfm-list-style-none;
+  margin: 0 auto;
+}
+
+.tfm-menu-links {
+  li {
+    margin: $tfm-gap 0;
+    transform: translateY(-66px);
+    opacity: 0;
+    transition: all 0.2s ease;
+    &.active a {
+      color: $tfm-primary-color;
+    }
+  }
+  a {
+    display: block;
+    color: $tfm-dark;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $tfm-primary-color;
+    }
+  }
+}
+
+.open .tfm-menu-links li {
+  transform: translateY(0);
+  opacity: 1;
+  &:nth-child(1) { transition-delay: 40ms; }
+  &:nth-child(2) { transition-delay: 80ms; }
+  &:nth-child(3) { transition-delay: 120ms; }
+  &:nth-child(4) { transition-delay: 160ms; }
+  &:nth-child(5) { transition-delay: 200ms; }
+  &:nth-child(6) { transition-delay: 240ms; }
+  &:nth-child(7) { transition-delay: 280ms; }
+  &:nth-child(8) { transition-delay: 320ms; }
+  &:nth-child(9) { transition-delay: 3600ms; }
+}
+
+// ==================================================================
+// TFM: Components / Main Menu / Custom Button
+//
+
+.tfm-menu-icon {
+  text-align: right;
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+
+.tfm-menu-icon-inner {
+  width: 20px;
+  height: 12px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 100;
+  &.open {
+    position: fixed;
+  }
+  span {
+    background: $tfm-dark;
+    display: block;
+    position: absolute;
+    height: 2px;
+    transform: rotate(0deg);
+    transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: 1;
+    width: 100%;
+    left: 0;
+    &:nth-child(1) { top: 0px;  }
+    &:nth-child(2) { top: 6px;  }
+    &:nth-child(3) { top: 12px; }
+  }
+  &.open span {
+    &:nth-child(1) { top: 6px; transform: rotate(-135deg); }
+    &:nth-child(2) { opacity: 0px; right: -60px; }
+    &:nth-child(3) { top: 6px; transform: rotate(135deg); }
+  }
+  &:hover {
+    span {
+      background: $tfm-primary-color;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".tfm-menu-icon-inner").click(function(){$(this).toggleClass("open"),$(".tfm-menu").toggleClass("open")})});

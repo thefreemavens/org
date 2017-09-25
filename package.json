@@ -1,0 +1,43 @@
+{
+  "name": "thefreemavens.org",
+  "version": "1.0.0",
+  "description": "The official website for thefreemavens.org",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-tfm:thefreemavens/org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-run": "^1.7.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5",
+    "normalize.css": "^7.0.0",
+    "run-sequence": "^2.1.0",
+    "uikit": "^3.0.0-beta.30"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

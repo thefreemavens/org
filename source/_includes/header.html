@@ -1,0 +1,26 @@
+<header class="tfm-app-header" role="banner">
+
+  <div class="tfm-menu-icon">
+    <div class="tfm-menu-icon-inner">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="tfm-menu">
+      <ul class="tfm-menu-links">
+      {% assign pages = site.pages | sort: 'order' %}
+      {% for page in pages %}
+      {% if page.url contains ".xml" or page.url contains "404" or page.url contains "confirm" %}
+        {% else %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="tfm-logo">
+    <a href="{{ site.baseurl }}{% link index.md %}" title="{{ site.title | escape }}">{% include _svg/tfm-logo.svg %}</a>
+  </div>
+
+</header>

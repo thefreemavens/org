@@ -1,0 +1,11 @@
+// ==================================================================
+// TFM: Components / Hero 
+//
+
+.hero {
+  @extend .tfm-valign;
+  min-height: 45%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 45vh; /* These two lines are counted as one :-)       */
+  text-align: center;
+  justify-content : center;
+}

@@ -1,0 +1,28 @@
+// ==================================================================
+// TFM Components
+//
+
+// TFM Call to action button within tfm-page-content
+.tfm-cta {
+  @extend .tfm-central;
+  margin: $tfm-gap 0 $tfm-gap * $tfm-gr; 
+}
+
+.tfm-page-meta {
+  @extend .tfm-central;
+  margin-top: $tfm-gap*$tfm-gr*$tfm-gr;
+  span {
+    @extend .h7;
+    display:block;
+  }
+  hr {
+    margin-top: $tfm-gap;
+  }
+}
+
+.lexicon .tfm-page-content ul {
+  @extend .tfm-list-style-none;
+  p {
+    margin-left: $tfm-gap;
+  }
+}

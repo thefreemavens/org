@@ -1,0 +1,15 @@
+// ==================================================================
+// TFM Components - Blockquote
+//
+
+blockquote {
+  margin: 0;
+  p {
+    font-size: $tfm-h3; 
+    font-style: italic;
+    border-left: 2px solid $tfm-primary-color;
+    margin: $tfm-gap*2 0;
+    padding: $tfm-gap/$tfm-gr $tfm-gap;
+  }
+}
+

@@ -1,0 +1,28 @@
+// ==================================================================
+// TFM: Utilities
+//
+
+// .tfm-center {text-align: center}
+
+// Apply @extend to the parent element
+.tfm-valign {
+  display: flex;
+  align-items: center;
+  // Add these two lines after @extend... then adjust vh
+  // min-height: 33%;  /* Fallback for browsers do NOT support vh unit */
+  // min-height: 33vh; /* These two lines are counted as one :-)       */
+}
+
+.tfm-list-style-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Center horizontly
+.tfm-central {
+  // display: block;
+  // width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+// ==================================================================
+// TFM Typography: Global
+//
+
+// Set fonts 
+html,
+body,
+button                    { font-family: $tfm-primary-font; }
+
+// Set sizes
+.h0, p                    { font-size: $tfm-h0; }  // 18px
+
+.h1, h1                   { font-size: $tfm-h1; }  // 48px
+.h2, h2                   { font-size: $tfm-h2; }  // 36px
+.h3, h3                   { font-size: $tfm-h3; }  // 30px
+.h4, h4                   { font-size: $tfm-h4; }  // 24px
+.h5, h5                   { font-size: $tfm-h5; }  // 21px
+.h6, h6                   { font-size: $tfm-h6; }  // 15px
+.h7                       { font-size: $tfm-h7; }  // 14px         
+.h8                       { font-size: $tfm-h8; }  // 12px         
+.h9                       { font-size: $tfm-h9; }  // 10px         
+
+// Set weight
+// Set line-height
+.h0, p                    { line-height: $tfm-gr; }
+.h1, h1                   { font-weight: $tfm-heading-font-weight; line-height: $tfm-line-height; }
+
+.h2,.h3,.h4,.h5,.h6,
+h2, h3, h4, h5, h6        { font-weight: $tfm-body-font-weight; line-height: $tfm-line-height; }
+
+// Set extra space 
+h1, h2                    { margin-bottom: $tfm-gap * $tfm-gr; }
+h3, h4, h5, h6, p         { margin-bottom: $tfm-gap; }
+
+// ==================================================================
+// TFM Typography: Custom
+//
+.ftm-footnotes ol         { font-size: $tfm-h6; }
+.ftm-footnotes p          { font-size: $tfm-h6; margin-bottom: 0.5rem;}
+
+a.footnote:before         { content: "["; }
+a.footnote:after          { content: "]"; }

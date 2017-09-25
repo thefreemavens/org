@@ -1,0 +1,61 @@
+// ==================================================================
+// TFM Base
+//
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport { width: device-width; }
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: $tfm-primary-font;
+  font-size: $tfm-h0;
+  font-weight: $tfm-body-font-weight;
+  text-align: left;
+  line-height: 1.618;
+  color: $tfm-dark;
+  background-color: $tfm-light;
+}
+
+[tabindex="-1"]:focus { outline: none !important;}
+
+p,
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+ul { list-style-type: none; padding-left: 1rem }
+
+hr { height: 5px; border: 0px solid; border-top-width: 1px; }
+
+a { text-decoration: none; }
+
+ol li { padding-left: $tfm-gap / $tfm-gr / $tfm-gr; }
+
+img { max-width: 100%; }

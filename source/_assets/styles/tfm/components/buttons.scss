@@ -1,0 +1,87 @@
+// ==================================================================
+// TFM Components - Buttons
+//
+
+// Hide :focus outline on Chrome
+button:focus { outline:0; }
+
+// TFM Button
+// Using default color and size.
+button,
+.tfm-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: $tfm-h6;
+  padding: 11px 20px;
+  border-radius: 4px;
+  font-weight: $tfm-font-weight;
+  line-height: $tfm-line-height;
+  border: px;
+  border-style: solid;
+  transition: all 0.15s ease-in-out;
+  margin: $tfm-gap 0 0;
+}
+
+button.tfm-fill-mute,
+.tfm-btn.tfm-fill-mute { cursor: not-allowed; }
+
+// ==================================================================
+// TFM Button Sizes: Small, Medium, and Large.
+//
+.tfm-btn-s {
+  @extend .tfm-btn;
+  font-size: $tfm-h8;
+  padding: 9px 16px;
+  // border: 1px solid $tfm-primary-color;
+}
+
+.tfm-btn-l {
+  @extend .tfm-btn;
+  font-size: $tfm-h0;
+  padding: 13px 24px;
+  // border: 2px solid $tfm-primary-color;
+}
+
+// ==================================================================
+// TFM Button Colors
+//
+.tfm-fill-color {
+  color: $tfm-light;
+  background: $tfm-primary-color;
+  border-color: $tfm-primary-color;
+  &:hover {
+    color: $tfm-light;
+    background: $tfm-secondary-color;
+    border-color: $tfm-secondary-color;
+  }
+}
+.tfm-fill-light {
+  color: $tfm-primary-color;
+  background: $tfm-light;
+  border-color: $tfm-primary-color;
+}
+.tfm-fill-dark {
+  color: $tfm-light;
+  background: $tfm-dark;
+  border-color: $tfm-dark;
+}
+
+.tfm-fill-mute {
+  // color: lighten($tfm-dark, 65);
+  color: $tfm-light;
+  // background: $tfm-light;
+  background: darken($tfm-muted-color, 5);
+  border-color: darken($tfm-muted-color, 5);
+  // cursor: not-allowed;
+}
+
+// ==================================================================
+// TFM Button custom styles
+//
+
+
