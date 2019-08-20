@@ -1,0 +1,90 @@
+// ==================================================================
+
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+// COLORS - DEFAULT
+
+body {
+  color: $black;
+  background-color: $white;
+}
+
+p {
+  color: $grey-3;
+}
+
+a {
+  color: $brand;
+  &:hover {
+    color: $black;
+  }
+  &.linkless {
+    color: $black;
+  }
+}
+
+.title span.pre {
+  color: $grey-4;
+}
+
+.subtitle {
+  color: $grey-3;
+}
+
+footer .icon svg {
+  stroke: $black;
+}
+
+hr {
+  border: 0.5px solid $grey-6;
+}
+
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+// COLORS - DARK THEME
+
+.dark-theme {
+  color: $white;
+  // background-color: $grey-2;
+  background-color: $white;
+  p {
+    color: $grey-6;
+  }
+  a:hover {
+    color: $white;
+  }
+  .subtitle {
+    color: $grey-6;
+  }
+  .icon svg {
+    stroke: $white;
+  }
+  hr {
+    border: 0.5px solid $grey-3;
+  }
+}
+
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+// COLORS - BRAND THEME
+
+.brand-theme {
+  color: $white;
+  // background-color: $grey-2;
+  background-color: $white;
+  p {
+    color: $grey-6;
+  }
+  // a:hover {
+  //   color: $white;
+  // }
+  // .subtitle {
+  //   color: $grey-6;
+  // }
+  // .icon svg {
+  //   stroke: $white;
+  // }
+  // hr {
+  //   border: 0.5px solid $grey-3;
+  // }
+}

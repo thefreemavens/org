@@ -1,0 +1,43 @@
+// ==================================================================
+// Horizzn: Utilities
+//
+
+// ==================================================================
+// Flexbox Aligner
+//
+// Apply @extend to the parent element
+// Source: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+ 
+// Vertically
+.flex                { display: flex; align-items: center; justify-content: center; }
+// .flex-item           { max-width: 50%; }
+.flex-item--top      { align-self: flex-start; }
+.flex-item--bottom   { align-self: flex-end; }
+
+// Horizontally
+.center              { text-align: center; margin-left: auto; margin-right: auto; display:block; }
+
+// Horizontally center absolute positioned elements
+// Usage: @extend .rzm-absolute-center; 
+.center-abs     { position: absolute; left: 50%; transform: translate(-50%, 0); }
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+// ==================================================================
+// Lists
+//
+
+.pure-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.link-alt {
+  color: $white;
+}

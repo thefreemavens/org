@@ -1,0 +1,35 @@
+// ==================================================================
+// Layout
+//
+// Usage: 
+// @extend layout-[width]
+//
+// If margins needed add:
+// @extend layout-m
+
+// .layout {
+//   display: block;
+//   margin: 0 auto;
+//   padding: 0;
+// }
+
+// Sizes
+//
+
+// Images and backgrounds
+// .layout-100 {
+//   @extend .layout;
+//   width: 100%;
+// }
+
+// Page content
+// .layout-66 {
+//   @extend .layout;
+//   @include fp(width, 280, 768);
+// }
+
+// Grid and inside columns
+// .layout-50 {
+//   @extend .layout;
+//   width: 50%;
+// }

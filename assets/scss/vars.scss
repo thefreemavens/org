@@ -1,0 +1,98 @@
+// ==================================================================
+// TFM Variables / Theme / Sizes
+//
+
+// Base Size 18px
+$base:                  16px !default;
+// $base-m:                16px !default;
+
+$golden:              1.618033 !default;
+$gap:                 2rem;
+
+// Media
+$tablet:              599px;
+$desktop:             768px;
+$md:                  992px;
+$lg:                  1200px;
+
+
+// ========================================================================
+// TFM Variables / Theme / Colors
+//
+
+$brand:               #6342FF !default; // Violet
+// $brand-alt:           darken($brand, 30); // Deep Blue
+// $brand-alt:           #64A697 !default; // Ocean Green
+// $brand-light:         #D7EFE7 !default;
+
+$pure-black:          #000000 !default;
+$pure-white:          #FFFFFF !default;
+
+$black:               #0D0D11 !default;
+$grey-1:              #1B1B22 !default;
+$grey-2:              #141418 !default;
+$grey-3:              #363745 !default;
+$grey-4:              #6D7081 !default;
+$grey-5:              #989AA7 !default;
+$grey-6:              #D2D3D9 !default;
+$white:               #F5F5F9 !default;
+// $background:          $white;
+// $muted:               #777;
+
+// ========================================================================
+// TFM Variables / Theme / Typography
+//
+
+$font:                'Roboto', 'Helvetica Neue', Arial, sans-serif !default;
+$font-alt:            'Montserrat', sans-serif !default;
+
+// $line-height:         1.414 !default;       // 24px
+$line-height:         $golden;       // 24px
+
+
+
+$h1:                  3.00000rem !default;  // 54px
+$h2:                  1.66666rem !default;  // 21px
+
+$h3:                  1.22222rem !default;  // 36px
+$h4:                  1.11111rem !default;  // 30px
+$h5:                  0.99999rem !default;  // 24px
+$h6:                  0.88888rem !default;  // 21px
+$h7:                  0.83333rem !default;  // 15px
+$h8:                  0.77777rem !default;  // 14px
+$h9:                  0.66666rem !default;  // 12px
+$h9:                  0.55555rem !default;  // 10px
+
+// ========================================================================
+// TFM Variables / Theme / Controls
+//
+
+// Set Golden Ratio
+
+// ========================================================================
+// TFM Variables / Theme / Form Control
+//
+
+$active-font-size: $h7 !default;
+$active-top: -$base !default;
+
+// Margin & Paddings
+$gap: $h2 * 1.5 !default;
+$spacer: $h2 / 8 !default;
+$fieldset-margin: 0 0 $gap * 2 !default;
+$checkbox-gap: $h2 * 2 !default;
+$checkbox-top: 0 !default;
+$radio-margin: $h2 / -4 !default;
+
+// Colors
+$input-color: $white !default;
+$border-color: $white !default;
+$label-color: darken($border-color, 100%) !default;
+$active-color: darken($border-color, 10%) !default;
+$focus-color: $white !default;
+$error-color: $white !default;
+
+// Animation
+$transition-speed: 0.2s !default;
+
+

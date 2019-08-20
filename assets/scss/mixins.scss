@@ -1,0 +1,91 @@
+// ==================================================================
+// TFM: Mixins
+//
+
+// ==================================================================
+// Gradient
+// Usage: @include gradient($brand, $brand-alt);
+//
+
+@mixin gradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+// ==================================================================
+// Media Queries
+// Usage: @include desktop { ... };
+//
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+// ==================================================================
+// Animation
+// Usage: @include animation(fade, 1s, 0, ease-in, 1, forwards, forwards)
+//
+
+@mixin animation ($animation, $duration, $delay, $timing-function, $iteration-count, $direction, $fill-mode) {
+  animation-name: $animation;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-direction: $direction;
+  animation-fill-mode: $fill-mode;
+}
+
+// ==================================================================
+// Auto Margins
+// Usage: @include margin;
+// Source: https://github.com/engageinteractive/core/blob/master/src/scss/utility/_mixins.scss
+//
+@mixin push-auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+// ==================================================================
+// Fluid Property
+// Usage: @include gradient($brand, $brand-alt);
+// Source: https://www.adrenalinmedia.com.au/blog/january-2016/this-changes-everything-css-%E2%80%98fluid-properties%E2%80%99
+//
+
+@mixin fp($property, $min, $max, $start:320, $end:1800, $clip: true, $sourceUnit:vw, $clipAtStart: true, $clipAtEnd: true) {
+    
+    $multiplier: ($max - $min) / ($end - $start) * 100;
+    $adder: ($min * $end - $max * $start) / ($end - $start);
+
+    $formula: calc(#{$multiplier + $sourceUnit} + #{$adder + 0px});
+  
+    @if($clip and $clipAtStart){
+        @media (max-width: #{$start + 0px}) {
+            #{$property}: $min + 0px;
+        }
+    }
+    
+    @if($clip and $clipAtEnd){
+        @media (min-width: #{$end + 0px}) {
+            #{$property}: $max + 0px;
+        }
+    }
+
+    #{$property}: $formula;
+}

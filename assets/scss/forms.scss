@@ -1,0 +1,356 @@
+// ==================================================================
+// TFM Forms
+//
+
+// ==================================================================
+// Styles
+//
+
+.form {
+  margin: 0 0 0;
+  button {
+    display: block;
+    margin: 4rem auto;
+  }
+}
+
+// .form-disclaimer {
+//   @extend .h6;
+//   margin: $gap * $golden 0;
+// }
+
+fieldset {
+  margin: $fieldset-margin;
+  padding: 0;
+  border: none;
+}
+
+.form-radio,
+.form-group {
+  position: relative;
+  margin-top: 2vh;
+  // margin-bottom: 1rem;
+  &.open { z-index: -1; } // Hides form when menu is open
+}
+
+.form-inline {
+  > .form-group,
+  > .btn {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+// .form-help {
+//   margin-top: $spacer;
+//   margin-left: $spacer;
+//   color: $label-color;
+//   font-size: $active-font-size;
+
+//   .checkbox &,
+//   .form-radio &,
+//   .form-group & {
+//     position: absolute;
+//     width: 100%;
+//   }
+
+//   .checkbox & {
+//     position: relative;
+//     margin-bottom: $base;
+//   }
+
+//   .form-radio & {
+//     padding-top: ($spacer * 2);
+//     margin-top: -$base;
+//   }
+// }
+
+.form-group {
+  text-align: left;
+  // scss-lint:disable QualifyingElement, NestingDepth
+  input {
+    height: ($base * 1.9);
+    text-align: left;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  // select {
+  //   width: 100%;
+  //   font-size: $base;
+  //   height: ($base * 1.6);
+  //   padding: $spacer $spacer ($spacer / 2);
+  //   background: none;
+  //   border: none;
+  //   line-height: 1.6;
+  //   box-shadow: none;
+  // }
+
+  .control-label {
+    position: absolute;
+    top: ($base / 10);
+    pointer-events: none;
+    padding-left: $spacer;
+    z-index: 1;
+    color: $white;
+    font-size: $base;
+    font-weight: 300;
+    transition: all $transition-speed ease;
+  }
+
+  .bar {
+    position: relative;
+    border-bottom: ($base / 16) solid $white;
+    display: block;
+    
+    &::before {
+      content: '';
+      height: ($base / 8);
+      width: 0;
+      left: 50%;
+      bottom: ($base / -16);
+      position: absolute;
+      background: $focus-color;
+      transition: left $transition-speed ease, width $transition-speed ease;
+      z-index: 2;
+    }
+  }
+
+  input,
+  textarea {
+    display: block;
+    background: none;
+    padding: $spacer $spacer ($spacer / 2);
+    font-size: $base;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    transition: all $transition-speed ease;
+    box-shadow: none;
+  }
+
+  input[type="file"] {
+    line-height: 1;
+
+    ~ .bar {
+      display: none;
+    }
+  }
+
+  select,
+  input:focus,
+  input:valid,
+  input.form-file,
+  input.has-value,
+  textarea:focus,
+  textarea:valid,
+  textarea.form-file,
+  textarea.has-value {
+    color: $input-color;
+
+    ~ .control-label {
+      font-size: $active-font-size;
+      color: $active-color;
+      top: $active-top;
+      left: 0;
+    }
+  }
+
+  select,
+  input,
+  textarea {
+    &:focus {
+      outline: none;
+
+      ~ .control-label {
+        color: $focus-color;
+      }
+
+      ~ .bar {
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// // Radio & Checkbox
+// .checkbox,
+// .form-radio {
+//   label {
+//     position: relative;
+//     cursor: pointer;
+//     padding-left: $checkbox-gap;
+//     text-align: left;
+//     color: $input-color;
+//     display: block;
+//   }
+
+//   input {
+//     width: auto;
+//     opacity: 0.00000001;
+//     position: absolute;
+//     left: 0;
+//   }
+// }
+
+// .radio {
+//   margin-bottom: $base;
+
+//   .helper {
+//     position: absolute;
+//     top: 2px;
+//     left: $radio-margin;
+//     cursor: pointer;
+//     display: block;
+//     font-size: $base;
+//     user-select: none;
+//     color: $border-color;
+
+//     &::before,
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       margin: ($spacer * 2);
+//       width: $base;
+//       height: $base;
+//       transition: transform $transition-speed ease;
+//       border-radius: 50%;
+//       border: ($base / 8) solid currentColor;
+//     }
+
+//     &::after {
+//       transform: scale(0);
+//       background-color: $focus-color;
+//       border-color: $focus-color;
+//     }
+//   }
+
+//   label:hover .helper {
+//     color: $focus-color;
+//   }
+
+//   // scss-lint:disable QualifyingElement, NestingDepth
+//   input:checked {
+//     ~ .helper {
+//       &::after {
+//           transform: scale(0.5);
+//       }
+//       &::before {
+//         color: $focus-color;
+//       }
+//     }
+//   }
+// }
+
+// .checkbox {
+//   // scss-lint:disable QualifyingElement
+  
+//   margin-top: ($gap * 2);
+//   margin-bottom: $base;
+  
+//   .helper {
+//     color: $border-color;
+//     position: absolute;
+//     // top: $checkbox-top;
+//     top: 6px;
+//     left: 0;
+//     width: $base;
+//     height: $base;
+//     z-index: 0;
+//     border: ($base / 8) solid currentColor;
+//     border-radius: ($base / 16);
+//     transition: border-color $transition-speed ease;
+    
+//     &::before,
+//     &::after {
+//       position: absolute;
+//       height: 0;
+//       width: ($base * 0.2);
+//       background-color: $focus-color;
+//       display: block;
+//       transform-origin: left top;
+//       border-radius: ($base / 4);
+//       content: '';
+//       transition: opacity $transition-speed ease, height 0s linear $transition-speed;
+//       opacity: 0;
+//     }
+    
+//     &::before {
+//       top: ($base * 0.65);
+//       left: ($base * 0.38);
+//       transform: rotate(-135deg);
+//       // box-shadow: 0 0 0 ($base / 16) $body-bg;
+//     }
+
+//     &::after {
+//       top: ($base * 0.3);
+//       left: 0;
+//       transform: rotate(-45deg);
+//     }
+//   }
+  
+//   label:hover .helper {
+//     color: $focus-color;
+//   }
+  
+//   input:checked {
+//     ~ .helper {
+//       color: $focus-color;
+      
+//       &::after,
+//       &::before {
+//         opacity: 1;
+//         transition: height $transition-speed ease;
+//       }
+
+//       &::after {
+//         height: ($base / 2);
+//       }
+
+//       &::before {
+//         height: ($base * 1.2);
+//         transition-delay: $transition-speed;
+//       }
+//     }
+//   }
+// }
+
+// .radio + .radio,
+// .checkbox + .checkbox {
+//   margin-top: $base;
+// }
+
+// .has-error {
+//   .legend.legend,
+//   &.form-group .control-label.control-label {
+//     // Prevent !importantRule
+//     color: $error-color;
+//   }
+  
+//   &.form-group,
+//   &.checkbox,
+//   &.radio,
+//   &.form-radio {
+//     .form-help,
+//     .helper {
+//       color: $error-color;
+//     }
+//   }
+  
+//   .bar {
+//     &::before {
+//       background: $error-color;
+//       left: 0;
+//       width: 100%;
+//     }
+//   }
+// }

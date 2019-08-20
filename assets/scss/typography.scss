@@ -1,0 +1,115 @@
+// ==================================================================
+// Typography
+//
+// b {
+//   font-weight: 500;
+// }
+
+h1 { @extend .h1; }
+h2 { @extend .h2; }
+h3 { @extend .h3; }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h7 {
+  font-family: $font-alt;
+  text-transform: uppercase; 
+}
+
+.h1 {
+  @include fp(font-size, 28, 48);
+  // @include fp(line-height, 28, 48);
+  @include fp(letter-spacing, 4, 8);
+  // @include fp(margin-top, 32, 50);
+  // @include fp(margin-bottom, 40, 58);
+}
+
+.h2 {
+  @include fp(font-size, 18, 26);
+  @include fp(letter-spacing, 2, 4);
+  // @include fp(margin-top, 28, 52);
+  // @include fp(margin-bottom, 28, 52);
+  // font-weight: 300;
+}
+
+.h3 {
+  @include fp(font-size, 13, 20);
+  @include fp(letter-spacing, 2, 4);
+  // @include fp(margin-top, 4, 10);
+  // @include fp(margin-bottom, 4, 10);
+  // font-weight: 500;
+}
+
+.h4 {
+  @include fp(font-size, 12, 16);
+  @include fp(letter-spacing, 2, 3);
+  // @include fp(margin-top, 22, 34);
+  // @include fp(margin-bottom, 22, 34);
+  // font-weight: 500;
+}
+// AppBlockQuote
+h4 {
+  @include fp(font-size, 20, 26);
+  @include fp(margin-top, 22, 34);
+  @include fp(margin-bottom, 22, 34);
+  font-weight: 300;
+  text-align: left;
+}
+
+p {
+  @include fp(font-size, 15, 18);
+  @include fp(margin-top, 22, 32);
+  @include fp(margin-bottom, 22, 32);
+  text-align: left;
+}
+
+// .legal {
+//   font-size: $h6;
+// }
+
+////////////////////////////////////////////////////
+// Monteserat based titles
+
+.title {
+  @extend .h1;
+  @include fp(margin-top, 0, 99);
+  @include fp(margin-bottom, 33, 66);
+  span {
+    display: block;
+    &.pre {
+      @extend .h3;
+    }
+  }
+}
+
+////////////////////////////////////////////////////
+// Roboto based subtitles
+
+.subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  @include fp(font-size, 13, 16);
+  @include fp(letter-spacing, 1, 2);
+  @include fp(word-spacing, 1, 2);
+}
+
+.subtitle-l {
+  @extend .subtitle;
+  @include fp(font-size, 14, 18);
+}
+
+.truth {
+  font-family: $font-alt;
+  // font-size: 20px;
+}
+.truth-alt {
+  @extend .h3;
+  display: inline-block;
+  margin-bottom: 1.62vh;
+  // font-family: $font-alt;
+  // text-transform: uppercase;
+}
