@@ -43,7 +43,7 @@
                   <li>
                     <nuxt-link
                       to="/"
-                      title=""
+                      title="Home"
                     >
                       Home
                     </nuxt-link>
@@ -64,20 +64,20 @@
                       Natural Law
                     </nuxt-link>
                   </li>
-                  <li>
-                    <nuxt-link
-                      to="/patreon/"
-                      title="Become a Patreon"
-                    >
-                      Become a Patreon
-                    </nuxt-link>
-                  </li>
+                  <!-- <li> -->
+                  <!-- <nuxt-link -->
+                  <!-- to="/patreon/" -->
+                  <!-- title="Become a Patreon" -->
+                  <!-- > -->
+                  <!-- Become a Patreon -->
+                  <!-- </nuxt-link> -->
+                  <!-- </li> -->
                   <li>
                     <nuxt-link
                       to="/join/"
-                      title="Get Initiated"
+                      title="Join"
                     >
-                      Get Initiated
+                      Be A Maven
                     </nuxt-link>
                   </li>
                 </ul>
