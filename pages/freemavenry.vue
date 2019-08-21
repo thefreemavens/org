@@ -184,22 +184,12 @@ export default {
 
 <style scoped lang="scss">
 .main {
-  // display: block;
-  // padding: 0;
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // position: relative;
   width: 100%;
-  // height: 100vh;
   color: $black;
   background: $white;
-  @include tablet {
-    // grid-template-columns: 1fr 1fr;
-  }
-  section.head {
+  .head {
     width: 100%;
     min-height: 100vh;
-    // @extend .flex;
     text-align: center;
     background: linear-gradient(
         to bottom,
@@ -226,9 +216,9 @@ export default {
 
 .title-icon {
   display: block;
-  margin: 10vh auto 20vh;
-  width: 100px;
-  height: 100px;
+  margin: 8vh auto 16vh;
+  @include fp(width, 66, 116);
+  @include fp(height, 66, 116);
 }
 
 .sg-icon {
@@ -249,39 +239,6 @@ export default {
   @extend .h2;
   color: $grey-3;
 }
-
-// .episodes {
-//   ol {
-//     @extend .pure-list;
-//     text-align: center;
-//     li {
-//       margin-bottom: 4vh;
-//       & > span:first-of-type {
-//         position: relative;
-//         top: 0.1vh;
-//         @extend .subtitle;
-//         color: $grey-4;
-//       }
-//       & > span:last-of-type {
-//         @extend .h3;
-//       }
-//       span {
-//         display: block;
-//       }
-//     }
-//   }
-// }
-
-// .profile-image {
-//   display: block;
-//   margin: 4vh auto 0;
-//   width: 132px;
-//   height: 132px;
-//   background: url('/images/mark-passio.jpg') center center;
-//   background-size: 132px 132px;
-//   border-radius: 50%;
-//   border: 3px solid $white;
-// }
 
 .content {
   max-width: 520px;

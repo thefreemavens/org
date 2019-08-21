@@ -21,6 +21,9 @@ a {
   &.linkless {
     color: $black;
   }
+  &.link-alt {
+    color: $white;
+  }
 }
 
 .title span.pre {
@@ -50,8 +53,10 @@ hr {
   p {
     color: $grey-6;
   }
-  a:hover {
-    color: $white;
+  a {
+    &:hover {
+      color: $white;
+    }
   }
   .subtitle {
     color: $grey-6;

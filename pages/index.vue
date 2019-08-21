@@ -31,8 +31,10 @@
         <div
           v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
           class="feature natural-law">
-          <div class="content">
-            <nuxt-link to="/natural-law">
+          <nuxt-link
+            to="/natural-law"
+            class="link-alt">
+            <div class="content">
               <icon
                 icon-name="natural-law"
                 icon-color="none"
@@ -42,24 +44,27 @@
                 height="60">
                 <icon-natural-law />
               </icon>
-            </nuxt-link>
-            <h2>Natural Law</h2>
-          </div>
-          <div class="image" />
+              <h2>Natural Law</h2>
+            </div>
+          </nuxt-link>
+          <nuxt-link to="/natural-law">
+            <div class="image" />
+          </nuxt-link>
         </div>
 
         <div
           v-scroll-reveal="{ duration: 2300, delay: 450, scale: 1 }"
           class="feature join">
           <div class="content">
-            <nuxt-link
-              to="/join"
-              class="h3 link-alt btn-alt"
-            >
+            <a
+              href="/join"
+              class="h3 link-alt btn-alt">
               Be a Maven
-            </nuxt-link>
+            </a>
           </div>
-          <div class="image" />
+          <nuxt-link to="/join">
+            <div class="image" />
+          </nuxt-link>
         </div>
       </div>
     </section>

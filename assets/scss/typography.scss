@@ -17,7 +17,8 @@ h3 { @extend .h3; }
 .h6,
 .h7 {
   font-family: $font-alt;
-  text-transform: uppercase; 
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .h1 {

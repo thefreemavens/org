@@ -339,6 +339,7 @@ export default {
     @include desktop {
       grid-template-columns: 1fr 1fr;
       max-width: 920px;
+      // max-width: 560px;
     }
   }
   & div {
