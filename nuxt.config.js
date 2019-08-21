@@ -6,25 +6,25 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  head: {
-    title: 'The Free Mavens | Unite Within',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'msapplication-TileColor', content: '#5b4cff' },
-      { name: 'theme-color', content: '#ffffff' },
-      { hid: 'description', name: 'description', content: pkg.description }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-      { rel: 'manifest', href: '/site.webmanifest' },
-      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5b4cff' }
-      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500,700' }
-    ]
-  },
+  // head: {
+  //   title: 'The Free Mavens | Unite Within',
+  //   meta: [
+  //     { charset: 'utf-8' },
+  //     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  //     { name: 'msapplication-TileColor', content: '#5b4cff' },
+  //     { name: 'theme-color', content: '#ffffff' },
+  //     { hid: 'description', name: 'description', content: pkg.description }
+  //   ],
+  //   link: [
+  //     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  //     { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+  //     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+  //     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+  //     { rel: 'manifest', href: '/site.webmanifest' },
+  //     { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5b4cff' }
+  //     // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500,700' }
+  //   ]
+  // },
 
   /*
   ** Customize the progress-bar color
@@ -56,7 +56,8 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/pwa',
   ],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
@@ -66,6 +67,12 @@ module.exports = {
     scss: [
       './assets/scss/main.scss'
     ],
+  },
+  pwa: {
+    // icon: false,
+    // meta: false,
+    // manifest: false
+    // oneSignal: false
   },
 
   /*
