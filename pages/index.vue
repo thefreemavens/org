@@ -56,11 +56,11 @@
           v-scroll-reveal="{ duration: 2300, delay: 450, scale: 1 }"
           class="feature join">
           <div class="content">
-            <a
-              href="/join"
+            <nuxt-link
+              to="/join"
               class="h3 link-alt btn-alt">
               Be a Maven
-            </a>
+            </nuxt-link>
           </div>
           <nuxt-link to="/join">
             <div class="image" />
