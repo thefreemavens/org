@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # USAGE:
-# bash deployDocs.shell
+# bash deploy.shell
 
 # abort on errors
 set -e

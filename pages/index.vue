@@ -5,8 +5,9 @@
       <div
         v-scroll-reveal.reset="{ duration: 3300, scale: 1 }"
         class="side-a">
-        <div class="box box-1">
-          <div class="inner">
+
+        <div class="poster">
+          <div class="content">
             <nuxt-link to="/freemavenry">
               <app-logomark
                 logo-style="line"
@@ -26,11 +27,11 @@
 
       </div>
 
-      <div
-        v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
-        class="side-b">
-        <div class="box box-2">
-          <div class="inner">
+      <div class="side-b">
+        <div
+          v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
+          class="feature natural-law">
+          <div class="content">
             <nuxt-link to="/natural-law">
               <icon
                 icon-name="natural-law"
@@ -44,12 +45,13 @@
             </nuxt-link>
             <h2>Natural Law</h2>
           </div>
+          <div class="image" />
         </div>
 
         <div
           v-scroll-reveal="{ duration: 2300, delay: 450, scale: 1 }"
-          class="box box-3">
-          <div class="inner">
+          class="feature join">
+          <div class="content">
             <nuxt-link
               to="/join"
               class="h3 link-alt btn-alt"
@@ -57,6 +59,7 @@
               Be a Maven
             </nuxt-link>
           </div>
+          <div class="image" />
         </div>
       </div>
     </section>
@@ -77,12 +80,12 @@ export default {
   },
   head() {
     return {
-      title: 'The Free Mavens | Home',
+      title: 'The Free Mavens',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'The Free Mavens organization official website.'
+          content: 'The Free Mavens Organization Official Website.'
         }
       ]
     }
@@ -97,26 +100,23 @@ export default {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  min-height: stretch;
   color: $black;
   @include tablet {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.box {
+.feature,
+.poster {
   text-align: center;
   position: relative;
-  .inner {
-    @extend .v-center;
-    width: 100%;
-  }
 }
-.box-1 {
-  background: $white;
+
+// 100vh
+.poster {
   min-height: 100vh;
-  @include tablet {
-    height: 100%;
-  }
+  background: $white;
   h3 {
     @extend .h4;
     position: absolute;
@@ -125,28 +125,42 @@ export default {
     right: 0;
     color: $grey-6;
   }
-}
-.box-2 {
-  color: $white;
-  background: url('/images/background-naturalLaw.jpg') center center;
-  background-size: cover;
-  height: 50vh;
   @include tablet {
-    height: 50%;
+    height: 100%;
+  }
+  .content {
+    @extend .v-center;
+    // width: 100%;
   }
 }
-.box-3 {
+
+// 50vh
+.feature {
   color: $white;
-  background: url('/images/background-flags.jpg') center center;
   background-size: cover;
   height: 50vh;
-  @include tablet {
-    height: 50%;
+  overflow: hidden;
+  .image {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: all 0.666s ease-out;
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+  .content {
+    @extend .v-center;
+    z-index: 10;
   }
   a.btn-alt {
     display: inline-block;
     border: 2px solid $white;
     padding: 10px 20px;
+  }
+  @include tablet {
+    height: 50%;
   }
 }
 
@@ -154,5 +168,13 @@ export default {
   @include fp(width, 66, 128);
   @include fp(height, 66, 128);
   // margin-top: 200px;
+}
+
+// Custom
+.natural-law .image {
+  background-image: url('/images/background-naturalLaw.jpg');
+}
+.join .image {
+  background-image: url('/images/background-flags.jpg');
 }
 </style>
