@@ -51,7 +51,7 @@
             <span class="truth">This seminar is free, open and required by all to self-educate and share.</span>
           </p>
           <p>
-            Watch, listen and learn the real Law of Attraction and how to apply it in your life so you too can benefit from this timeless masterpiece of inspiring and empowering occulted knowledge.
+            Watch, listen and learn the real Law of Attraction and how to apply it in your life so you too can benefit from this body of inspiring and empowering occulted knowledge.
           </p>
           <p>
             The seminar is required to know and act on the information given for anyone who wishes to join The Free Mavens.

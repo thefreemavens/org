@@ -55,16 +55,16 @@
 // Usage: @include margin;
 // Source: https://github.com/engageinteractive/core/blob/master/src/scss/utility/_mixins.scss
 //
-@mixin push-auto {
-    margin: { 
-        left: auto;
-        right: auto;
-    }
-}
+// @mixin push-auto {
+//     margin: { 
+//         left: auto;
+//         right: auto;
+//     }
+// }
 
 // ==================================================================
 // Fluid Property
-// Usage: @include gradient($brand, $brand-alt);
+// Usage: @include fp(max-width, 200, 400);
 // Source: https://www.adrenalinmedia.com.au/blog/january-2016/this-changes-everything-css-%E2%80%98fluid-properties%E2%80%99
 //
 

@@ -92,7 +92,7 @@
           v-scroll-reveal="{ delay: 300 }"
           class="col2">
           <p>
-            <span class="truth-alt">Relief</span><br>Freemavens are taught to practise charity, and to care, not only for their own members, but for the community as a whole, by charitable giving, voluntary effort and taking actions.
+            <span class="truth-alt">Relief</span><br>Freemavens are taught to practice charity, and to care, not only for their own members, but for the community as a whole, by charitable giving, voluntary effort and taking actions.
           </p>
         </div>
       </div>
