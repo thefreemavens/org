@@ -239,26 +239,4 @@ export default {
   @extend .h2;
   color: $grey-3;
 }
-
-.content {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 0 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  &.columns-2 {
-    .col1 {
-      & > p:last-of-type {
-        margin-bottom: 0; // remove extra space betweeb <p> on a single column
-      }
-    }
-    @include desktop {
-      grid-template-columns: 1fr 1fr;
-      max-width: 920px;
-    }
-  }
-  & div {
-    padding: 0 30px;
-  }
-}
 </style>

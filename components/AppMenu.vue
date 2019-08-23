@@ -203,6 +203,7 @@ export default {
 //
 
 .icon {
+  cursor: pointer;
   position: fixed;
   @extend .flex;
   right: 0;
@@ -211,70 +212,35 @@ export default {
   background: $brand;
   width: 40px;
   height: 40px;
-  @include tablet {
-    // right: 0;
-    // top: 0;
-  }
-  @include desktop {
-    // position: fixed;
-  }
 }
 
 .icon-inner {
-  cursor: pointer;
   display: inline-block;
   z-index: 100;
-  &:hover {
-    span {
-      // background: $brand;
-    }
+  svg {
+    transition: transform 0.66s;
+    transform: rotate(-60deg);
   }
   &.open {
-    position: relative;
-    // span {
-    //   &:nth-child(1) {
-    //     top: 6px;
-    //     transform: rotate(-135deg);
-    //   }
-    //   &:nth-child(2) {
-    //     opacity: 0;
-    //     right: -60px;
-    //   }
-    //   &:nth-child(3) {
-    //     top: 6px;
-    //     transform: rotate(135deg);
-    //   }
-    // }
-  }
-  &.light {
-    span {
-      background: $white;
-    }
-    &:hover {
-      span {
-        background: $brand;
-      }
-    }
-    &.open {
-      span {
-        background: $black;
-      }
+    svg {
+      position: relative;
+      transform: rotate(60deg);
     }
   }
 }
 
-.invert {
-  .icon-inner {
-    span {
-      background: $white;
-    }
-    &.open {
-      span {
-        background: $black;
-      }
-    }
-  }
-}
+// .invert {
+//   .icon-inner {
+//     span {
+//       background: $white;
+//     }
+//     &.open {
+//       span {
+//         background: $black;
+//       }
+//     }
+//   }
+// }
 
 // ==================================================================
 // Menu Transition
@@ -282,7 +248,7 @@ export default {
 
 .menu-enter-active,
 .menu-leave-active {
-  transition: opacity 0.66s ease-in;
+  transition: opacity 0.66s ease;
   transition-delay: 0.33s;
 }
 
