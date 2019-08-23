@@ -143,7 +143,7 @@ export default {
   @extend .h3;
   // font-size: $h3;
   font-family: $font-alt;
-  font-weight: 300;
+  // font-weight: 300;
   letter-spacing: 0.22rem;
   // text-transform: uppercase;
   @include desktop {

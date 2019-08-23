@@ -34,7 +34,7 @@
           <icon-sg20 />
         </icon>
       </div>
-      <div class="content columns-2">
+      <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
@@ -77,7 +77,7 @@
           <icon-sg3 />
         </icon>
       </div>
-      <div class="content columns-2">
+      <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
@@ -114,7 +114,7 @@
           <icon-sg8 />
         </icon>
       </div>
-      <div class="content columns-2">
+      <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">

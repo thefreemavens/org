@@ -43,7 +43,7 @@
           <icon-sg8 />
         </icon>
       </div>
-      <div class="content columns-2">
+      <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
@@ -136,7 +136,7 @@
       <h1
         v-scroll-reveal
         class="title"><span class="pre">About The Speaker</span><span>Mark Passio</span></h1>
-      <div class="content columns-2">
+      <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
@@ -324,26 +324,26 @@ export default {
   border: 3px solid $white;
 }
 
-.content {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 0 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  &.columns-2 {
-    .col1 {
-      & > p:last-of-type {
-        margin-bottom: 0; // remove extra space betweeb <p> on a single column
-      }
-    }
-    @include desktop {
-      grid-template-columns: 1fr 1fr;
-      max-width: 920px;
-      // max-width: 560px;
-    }
-  }
-  & div {
-    padding: 0 30px;
-  }
-}
+// .content {
+//   max-width: 520px;
+//   margin: 0 auto;
+//   padding: 0 0;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   &.two-columns {
+//     .col1 {
+//       & > p:last-of-type {
+//         margin-bottom: 0; // remove extra space betweeb <p> on a single column
+//       }
+//     }
+//     @include desktop {
+//       grid-template-columns: 1fr 1fr;
+//       max-width: 920px;
+//       // max-width: 560px;
+//     }
+//   }
+//   & div {
+//     padding: 0 30px;
+//   }
+// }
 </style>

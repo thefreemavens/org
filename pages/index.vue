@@ -159,6 +159,9 @@ export default {
     @extend .v-center;
     z-index: 10;
   }
+  svg {
+    @extend .center;
+  }
   a.btn-alt {
     display: inline-block;
     border: 2px solid $white;

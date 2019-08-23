@@ -131,29 +131,29 @@ export default {
   color: $grey-3;
 }
 
-.content {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  &.columns-2 {
-    .col1 {
-      & > p:last-of-type {
-        margin-bottom: 0; // remove extra space betweeb <p> on a single column
-      }
-    }
-    @include desktop {
-      // grid-template-columns: 1fr 1fr;
-      // max-width: 920px;
-    }
-  }
-  & div {
-    padding: 0 30px;
-  }
-}
+// .content {
+//   max-width: 500px;
+//   margin: 0 auto;
+//   padding: 0 30px;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   &.columns-2 {
+//     .col1 {
+//       & > p:last-of-type {
+//         margin-bottom: 0; // remove extra space betweeb <p> on a single column
+//       }
+//     }
+//     @include desktop {
+//       // grid-template-columns: 1fr 1fr;
+//       // max-width: 920px;
+//     }
+//   }
+//   & div {
+//     padding: 0 30px;
+//   }
+// }
 
-.content p {
-  text-align: justify;
-}
+// .content p {
+//   text-align: justify;
+// }
 </style>

@@ -14,7 +14,7 @@
   padding: 0 0;
   display: grid;
   grid-template-columns: 1fr;
-  &.columns-2 {
+  &.two-columns {
     .col1 {
       & > p:last-of-type {
         margin-bottom: 0; // remove extra space betweeb <p> on a single column
