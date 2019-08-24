@@ -134,6 +134,7 @@
 
     <nuxt-link to="/join">
       <app-button
+        v-scroll-reveal="{ delay: 300 }"
         title="Get Initiated"
         class="fill-c center wide"
       />

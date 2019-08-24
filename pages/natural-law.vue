@@ -91,39 +91,70 @@
       </div>
       <div class="content">
         <div
-          v-scroll-reveal="{ delay: 150 }"
           class="col1">
           <ol>
-            <li>
-              <span>Episode 1 / 3:33</span>
-              <span>
-                <a
-                  href="https://youtu.be/PnIVtZElymw"
-                  target="_blank">
-                  Before We Begin 
-                </a>
-              </span>
-            </li>
-            <li>
-              <span>Episode 2 / 3:35</span>
-              <span>
-                <a
-                  href="https://youtu.be/ft74HDhZ66s"
-                  target="_blank">
-                  Presentation Style
-                </a>
-              </span>
-            </li>
-            <li>
-              <span>Episode 3 / 4:52</span>
-              <span>
-                <a
-                  href="https://youtu.be/M0_9IVemAKo"
-                  target="_blank">
-                  Prerequisites
-                </a>
-              </span>
-            </li>
+            <episodes-li
+              number="1"
+              title="Before We Begin"
+              link="https://youtu.be/PnIVtZElymw"
+              duration="3:33"
+            />
+            <episodes-li
+              number="2"
+              title="Presentation Style"
+              link="https://youtu.be/ft74HDhZ66s"
+              duration="3:35"
+            />
+            <episodes-li
+              number="3"
+              title="Prerequisites"
+              link="https://youtu.be/M0_9IVemAKo"
+              duration="4:52"
+            />
+            <episodes-li
+              number="4"
+              title="Teachability"
+            />
+            <episodes-li
+              number="5"
+              title="Belief Systems"
+            />
+            <episodes-li
+              number="6"
+              title="Requirements"
+            />
+            <episodes-li
+              number="7"
+              title="The role of Knowledge"
+            />
+            <episodes-li
+              number="8"
+              title="Occult Knowledge"
+            />
+            <episodes-li
+              number="9"
+              title="Nescience vs. Ignorance"
+            />
+            <episodes-li
+              number="10"
+              title="Why Are We Losing Freedom?"
+            />
+            <episodes-li
+              number="11"
+              title="The Master Key"
+            />
+            <episodes-li
+              number="12"
+              title="Problem Solving"
+            />
+            <episodes-li
+              number="13"
+              title="What Truth is"
+            />
+            <!--             <episodes-li
+            number="14"
+            title="Truth vs. Perception"
+            /> -->
           </ol>
         </div>
       </div>
@@ -136,7 +167,7 @@
       <h1
         v-scroll-reveal
         class="title"><span class="pre">About The Speaker</span><span>Mark Passio</span></h1>
-      <div class="content two-columns">
+      <div class="content">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
@@ -147,37 +178,45 @@
             Mark has undertaken the task of assembling vast amounts of research in the areas of metaphysics, occultism, spirituality, symbology and consciousness studies.
           </p>
           <p>
-            In 2007, Mark began presenting this information in the form of a presentation series entitled
+            The full biography is available on Mark's website -<br>
             <a
-              href="http://www.whatonearthishappening.com"
-              target="_blank">What On Earth Is Happening</a>, with the intention of bringing the implications of this body of knowledge to greater public awareness.
+              href="http://www.whatonearthishappening.com/bio"
+              target="_blank">What On Earth Is Happening
+            </a>
           </p>
+        </div>
+        <!--           <p>
+        In 2007, Mark began presenting this information in the form of a presentation series entitled
+        <a
+        href="http://www.whatonearthishappening.com"
+        target="_blank">What On Earth Is Happening</a>, with the intention of bringing the implications of this body of knowledge to greater public awareness.
+        </p>
         </div>
         <div
-          v-scroll-reveal="{ delay: 300 }"
-          class="col2">
-          <p>
-            In 2010, Mark began hosting his own
-            <a
-              href="http://www.whatonearthishappening.com/show"
-              target="_blank">weekly internet radio show
-            </a> which continues today in the form of a podcast.  Mark was one of the co-founders of the
-            <a
-              href="http://www.freeyourmindconference.com/"
-              target="_blank">
-            Free Your Mind Conference</a>, the Philadelphia-based conference on consciousness, mind control and the occult.
-          </p>
-          <p>
-            Over the years, Mark has worked closely with activist groups in his area such as the
-            <a
-              href="http://teslasciencefoundation.org"
-              target="_blank">Tesla Science Foundation</a>,
-            <a
-              href="https://libertyontherocks.org"
-              target="_blank">
-            Philadelphia Liberty On The Rocks</a>, Truth-Freedom-Prosperity and Survive & Thrive Philadelphia.
-          </p>
-        </div>
+        v-scroll-reveal="{ delay: 300 }"
+        class="col2">
+        <p>
+        In 2010, Mark began hosting his own
+        <a
+        href="http://www.whatonearthishappening.com/show"
+        target="_blank">weekly internet radio show
+        </a> which continues today in the form of a podcast.  Mark was one of the co-founders of the
+        <a
+        href="http://www.freeyourmindconference.com/"
+        target="_blank">
+        Free Your Mind Conference</a>, the Philadelphia-based conference on consciousness, mind control and the occult.
+        </p>
+        <p>
+        Over the years, Mark has worked closely with activist groups in his area such as the
+        <a
+        href="http://teslasciencefoundation.org"
+        target="_blank">Tesla Science Foundation</a>,
+        <a
+        href="https://libertyontherocks.org"
+        target="_blank">
+        Philadelphia Liberty On The Rocks</a>, Truth-Freedom-Prosperity and Survive & Thrive Philadelphia.
+        </p> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -192,7 +231,8 @@ import Icon from '@/components/icons/Icon'
 import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
 import IconSg8 from '@/components/icons/IconSg8'
 import IconSg20 from '@/components/icons/IconSg20'
-import AppFooter from '@/components/AppFooter.vue'
+import EpisodesLi from '@/components/EpisodesLi'
+import AppFooter from '@/components/AppFooter'
 
 export default {
   layout: 'main',
@@ -202,6 +242,7 @@ export default {
     IconNaturalLaw,
     IconSg8,
     IconSg20,
+    EpisodesLi,
     AppFooter
   },
   head() {
@@ -295,21 +336,21 @@ export default {
   ol {
     @extend .pure-list;
     text-align: center;
-    li {
-      margin-bottom: 4vh;
-      & > span:first-of-type {
-        position: relative;
-        top: 0.1vh;
-        @extend .subtitle;
-        color: $grey-4;
-      }
-      & > span:last-of-type {
-        @extend .h3;
-      }
-      span {
-        display: block;
-      }
-    }
+    // li {
+    //   margin-bottom: 4vh;
+    //   & > span:first-of-type {
+    //     position: relative;
+    //     top: 0.1vh;
+    //     @extend .subtitle;
+    //     color: $grey-4;
+    //   }
+    //   & > span:last-of-type {
+    //     @extend .h3;
+    //   }
+    //   span {
+    //     display: block;
+    //   }
+    // }
   }
 }
 
