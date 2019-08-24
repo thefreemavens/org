@@ -80,16 +80,11 @@ hr {
   p {
     color: $grey-6;
   }
-  // a:hover {
-  //   color: $white;
-  // }
-  // .subtitle {
-  //   color: $grey-6;
-  // }
-  // .icon svg {
-  //   stroke: $white;
-  // }
-  // hr {
-  //   border: 0.5px solid $grey-3;
-  // }
+  a {
+    color: $grey-6;
+    border-bottom: 1px solid $grey-5;
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+  }
 }

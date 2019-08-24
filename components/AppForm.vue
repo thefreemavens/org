@@ -31,7 +31,7 @@
     </div>
 
     <!--     <p class="legal">
-    <b>Remember:</b> The Free Mavens is not for everyone. Our community consists of free, open minded and truth seekers with a shared goal that is inline with both the <nuxt-link to="/be-a-maven">Mavenry</nuxt-link> ideology and our <nuxt-link to="/structure">method of organization</nuxt-link>. Please take a short read and decide if Freemavenry is for you.
+    <b>Remember:</b> The Free Mavens is not for everyone. Our members consists of free, open minded and truth seekers with a shared goal that is inline with both the <nuxt-link to="/be-a-maven">Mavenry</nuxt-link> ideology and our <nuxt-link to="/structure">method of organization</nuxt-link>. Please take a short read and decide if Freemavenry is for you.
     </p> -->
 
     <app-button
@@ -106,7 +106,7 @@ export default {
   }
 }
 
-.legal {
-  font-size: $h6;
-}
+// .legal {
+//   font-size: $h6;
+// }
 </style>

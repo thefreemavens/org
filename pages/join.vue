@@ -19,37 +19,25 @@
       </div>
       <div class="content">
         <p class="">
-          Be part of a community of truth-seekers and free-thinkers who search for a deeper understanding of life and actively uphold the power of unity and knowledge in effort to change behaviors, lives, and ultimately, the world.
+          Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
         </p>
         <app-form />
       </div>
 
     </section>
 
-    <!-- <app-footer/> -->
-
   </div>
 </template>
 
 <script>
 import AppLogomark from '@/components/AppLogomark'
-import Icon from '@/components/icons/Icon'
-// import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
-import IconSg8 from '@/components/icons/IconSg8'
-import IconSg20 from '@/components/icons/IconSg20'
 import AppForm from '@/components/AppForm'
-import AppFooter from '@/components/AppFooter'
 
 export default {
   layout: 'main',
   components: {
     AppLogomark,
-    Icon,
-    // IconNaturalLaw,
-    IconSg8,
-    IconSg20,
-    AppForm,
-    AppFooter
+    AppForm
   },
   head() {
     return {
@@ -63,7 +51,6 @@ export default {
       ],
       bodyAttrs: {
         class: 'brand-theme'
-        // class: this.modalOpen ? 'm-open' : 'm-close'
       }
     }
   }
@@ -93,7 +80,7 @@ export default {
       p {
         @extend .subtitle-l;
         margin-top: -1vh;
-        padding: 0 30px;
+        // padding: 0 30px;
       }
     }
   }
@@ -130,30 +117,4 @@ export default {
   @extend .h2;
   color: $grey-3;
 }
-
-// .content {
-//   max-width: 500px;
-//   margin: 0 auto;
-//   padding: 0 30px;
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   &.columns-2 {
-//     .col1 {
-//       & > p:last-of-type {
-//         margin-bottom: 0; // remove extra space betweeb <p> on a single column
-//       }
-//     }
-//     @include desktop {
-//       // grid-template-columns: 1fr 1fr;
-//       // max-width: 920px;
-//     }
-//   }
-//   & div {
-//     padding: 0 30px;
-//   }
-// }
-
-// .content p {
-//   text-align: justify;
-// }
 </style>

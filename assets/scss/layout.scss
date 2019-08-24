@@ -11,7 +11,7 @@
 .content {
   max-width: 520px;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0 30px;
   display: grid;
   grid-template-columns: 1fr;
   &.two-columns {
@@ -23,10 +23,13 @@
     @include desktop {
       grid-template-columns: 1fr 1fr;
       max-width: 920px;
+      & > div:first-of-type {
+        @include fp(padding-right, 20, 40);
+      }
+      & > div:last-of-type {
+        @include fp(padding-left, 20, 40);
+      }
     }
-  }
-  & div {
-    padding: 0 30px;
   }
 }
 
