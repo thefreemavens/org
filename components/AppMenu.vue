@@ -64,14 +64,6 @@
                       Natural Law
                     </nuxt-link>
                   </li>
-                  <!-- <li> -->
-                  <!-- <nuxt-link -->
-                  <!-- to="/patreon/" -->
-                  <!-- title="Become a Patreon" -->
-                  <!-- > -->
-                  <!-- Become a Patreon -->
-                  <!-- </nuxt-link> -->
-                  <!-- </li> -->
                   <li>
                     <nuxt-link
                       to="/join/"
@@ -109,6 +101,13 @@ export default {
     return {
       showMenu: false
     }
+  },
+  mounted() {
+    document.body.addEventListener('keyup', e => {
+      if (e.keyCode === 27) {
+        this.showMenu = false
+      }
+    })
   }
 }
 </script>
@@ -228,19 +227,6 @@ export default {
     }
   }
 }
-
-// .invert {
-//   .icon-inner {
-//     span {
-//       background: $white;
-//     }
-//     &.open {
-//       span {
-//         background: $black;
-//       }
-//     }
-//   }
-// }
 
 // ==================================================================
 // Menu Transition
