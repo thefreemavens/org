@@ -69,9 +69,9 @@ module.exports = {
     ],
   },
   pwa: {
-    icon: false
+    icon: false,
     // meta: false,
-    // manifest: false
+    manifest: false
     // oneSignal: false
   },
 

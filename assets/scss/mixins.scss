@@ -23,6 +23,12 @@
 // Usage: @include desktop { ... };
 //
 
+@mixin phone {
+  @media only screen and (min-width: $phone) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media only screen and (min-width: $tablet) {
     @content;

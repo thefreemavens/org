@@ -7,7 +7,7 @@
         class="side-a">
 
         <div class="poster">
-          <div class="content">
+          <div class="inner">
             <nuxt-link to="/freemavenry">
               <app-logomark
                 logo-style="line"
@@ -34,7 +34,7 @@
           <nuxt-link
             to="/natural-law"
             class="link-alt">
-            <div class="content">
+            <div class="inner">
               <icon
                 icon-name="natural-law"
                 icon-color="none"
@@ -55,7 +55,7 @@
         <div
           v-scroll-reveal="{ duration: 2300, delay: 450, scale: 1 }"
           class="feature join">
-          <div class="content">
+          <div class="inner">
             <nuxt-link
               to="/join"
               class="h3 link-alt btn-alt">
@@ -107,7 +107,7 @@ export default {
   min-height: 100vh;
   min-height: stretch;
   color: $black;
-  @include tablet {
+  @include phone {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -130,10 +130,10 @@ export default {
     right: 0;
     color: $grey-6;
   }
-  @include tablet {
+  @include phone {
     height: 100%;
   }
-  .content {
+  .inner {
     @extend .v-center;
     // width: 100%;
   }
@@ -155,9 +155,10 @@ export default {
       transform: scale(1.06);
     }
   }
-  .content {
+  .inner {
     @extend .v-center;
     z-index: 10;
+    padding: 0;
   }
   svg {
     @extend .center;
@@ -167,7 +168,7 @@ export default {
     border: 2px solid $white;
     padding: 10px 20px;
   }
-  @include tablet {
+  @include phone {
     height: 50%;
   }
 }
