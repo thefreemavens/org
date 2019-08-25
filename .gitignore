@@ -93,7 +93,7 @@ dist
 *.ntvs*
 *.njsproj
 *.sln
-# *.sw*
-# static/sw.js
+*.sw*
+sw.*
 
 node_modules
