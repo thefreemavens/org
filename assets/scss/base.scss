@@ -140,9 +140,12 @@ a {
   }
 }
 
-p a {
-  font-weight: 400;
+.nuxt-link-active {
+  display: inline-block;
 }
+// p a {
+//   font-weight: 400;
+// }
 
 sup {
   font-size: $h8;

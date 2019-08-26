@@ -4,13 +4,15 @@
     <section
       v-scroll-reveal.reset
       class="head">
-      <app-logomark
-        logo-style="line"
-        class="logo title-icon"
-      />
+      <nuxt-link to="/">
+        <app-logomark
+          logo-style="line"
+          class="logo title-icon"
+        />
+      </nuxt-link>
       <div class="inner">
-        <h1 class="title"><span class="pre">The Free</span><span>Mavens</span></h1>
-        <!-- <p>The real Law of Attraction and how to apply it in your life</p> -->
+        <h1 class="title"><span class="pre">The</span><span>FreeMavens</span></h1>
+        <!-- <p>For the well-being of all beings</p> -->
       </div>
       <!-- <p class="desc">Free Seminar</p> -->
       <!-- <h3>Worldwide</h3> -->
@@ -42,10 +44,10 @@
             <span class="truth">There is no greater force for changing the world than the power of <nuxt-link to="/join">unity</nuxt-link> through <nuxt-link to="/natural-law">knowledge</nuxt-link>.</span>
           </p>
           <p>
-            Freemavenry is a non-religious, non-political, fraternal and benevolent organization. Its roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, spirituality, symbology and consciousness.
+            The Free Mavens promotes the Great Work and provide a great body of knowledge for researchers, free-thinkers and truth seekers, so that people all over the world can gain a better understanding of the biggest issues faced by the world, and feed a desire to unite and help create a better future for all of us.
           </p>
           <p>
-            The Free Mavens provide great body of knowledge for researchers, free-thinkers and truth seekers, so that people all over the world can gain a better understanding of the biggest issues faced by the world, and feed a desire to unite and help create a better future for all of us.
+            Freemavenry is a non-religious, non-political, fraternal and benevolent organization. Its roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, spirituality, symbology and consciousness.
           </p>
         </div>
         <div
@@ -61,7 +63,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="principles">
       <h1
         v-scroll-reveal
         class="title"><span class="pre">Our Three great</span><span>Principles</span>
@@ -118,27 +120,34 @@
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
+          <p class="truth">
+            The Journey of a Lifetime starts here.
+          </p>
           <p>
-            The Journey of a Lifetime. Becoming a Free Maven is like going on a journey: from joining as an Apprentice, it typically takes one or two years to become a Master Maven, with each of the three stages marked by a special acknowledgment.
+            Becoming a Free Maven is like going on a journey: from joining as an Apprentice, it typically takes one or two years to become a Master Maven, with each of the three stages marked by a special acknowledgment.
           </p>
         </div>
         <div
           v-scroll-reveal="{ delay: 300 }"
           class="col2">
           <p>
-            The essential qualification for admission is knowing the real Law of Attraction and applying it in your life.  Membership is open to all men and women of integrity who can fulfill this essential qualification. 
+            The essential qualification for admission is abiding by the <a v-scroll-to="'#principles'">Three Great Principles</a> and knowing the <nuxt-link to="/natural-law">Real Law of Attraction</nuxt-link> while applying it in your day-to-day life.
+          </p>
+          <p class="litebox">
+            Membership is open to all men and women of integrity who can fulfill this essential qualification. 
           </p>
         </div>
       </div>
+      <nuxt-link
+        to="/join"
+        class="cta">
+        <app-button
+          v-scroll-reveal="{ delay: 300 }"
+          title="Get Initiated"
+          class="fill-c center wide"
+        />
+      </nuxt-link>
     </section>
-
-    <nuxt-link to="/join">
-      <app-button
-        v-scroll-reveal="{ delay: 300 }"
-        title="Get Initiated"
-        class="fill-c center wide"
-      />
-    </nuxt-link>
 
     <app-footer/>
 
@@ -218,8 +227,8 @@ export default {
 .title-icon {
   display: block;
   margin: 8vh auto 16vh;
-  @include fp(width, 66, 116);
-  @include fp(height, 66, 116);
+  @include fp(width, 66, 102);
+  @include fp(height, 66, 102);
 }
 
 .sg-icon {
@@ -239,5 +248,19 @@ export default {
   margin: 24vh 0 0;
   @extend .h2;
   color: $grey-3;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 4vh;
+  margin-bottom: -6vh;
+}
+.litebox {
+  // background: lighten($brand, 36);
+  // padding: 26px 20px;
+  // color: $pure-black;
+  // border-radius: 6px;
+  // font-family: $font-alt;
+  // font-size: 14px;
 }
 </style>
