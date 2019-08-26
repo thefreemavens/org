@@ -314,8 +314,8 @@ export default {
 }
 
 .sg-icon {
-  margin-top: -3vh;
-  margin-bottom: 4vh;
+  margin-top: -4vh;
+  margin-bottom: 8vh;
   width: 66px;
   height: 66px;
 }
@@ -336,21 +336,7 @@ export default {
   ol {
     @extend .pure-list;
     text-align: center;
-    // li {
-    //   margin-bottom: 4vh;
-    //   & > span:first-of-type {
-    //     position: relative;
-    //     top: 0.1vh;
-    //     @extend .subtitle;
-    //     color: $grey-4;
-    //   }
-    //   & > span:last-of-type {
-    //     @extend .h3;
-    //   }
-    //   span {
-    //     display: block;
-    //   }
-    // }
+    margin-top: -6vh;
   }
 }
 

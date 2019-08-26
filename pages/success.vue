@@ -1,29 +1,35 @@
 <template>
-  <div class="main dark-theme">
+  <div class="main">
 
     <section
       v-scroll-reveal.reset
       class="head">
       <nuxt-link to="/">
         <app-logomark
-          logo-style="line-w"
+          logo-style="line"
           class="logo title-icon"
         />
       </nuxt-link>
       <div class="inner">
         <h1>
           <!-- <span class="pre">The Real</span> -->
-          <span>Thank You!</span>
+          <span>Congrats!</span>
         </h1>
         <!-- <p>The real Law of Attraction and how to apply it in your life</p> -->
       </div>
-      <!-- <div class="content"> -->
-      <!-- <p> Your email was submitted successfully. and additional information about your request to be  Initiated with the Free Mavens will be sent to you within 24-48 hours. </p> -->
-      <!-- <app-form /> -->
-      <!-- </div> -->
-
+      <div class="content">
+        <p>
+          Your email has been registered and added to our list of initiates.
+        </p>
+        <p>
+          You'll be provided with future updates and additional information that is relevant to your initiation process including further steps you'll need to take to complete your initiation with The Freemavens.
+        </p>
+        <p>
+          <b>Remember:</b> We only accept initiates who are free, open-minded and truth-seekers with a shared goal that is inline with <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> principles and what we stand for.
+        </p>
+      </div>
+      <app-footer/>
     </section>
-
     <!-- <app-footer/> -->
 
   </div>
@@ -60,7 +66,7 @@ export default {
         }
       ],
       bodyAttrs: {
-        class: 'brand-theme'
+        class: ''
         // class: this.modalOpen ? 'm-open' : 'm-close'
       }
     }
@@ -71,22 +77,21 @@ export default {
 <style scoped lang="scss">
 .main {
   width: 100%;
-  background: $brand;
+  // background: $white;
   @include tablet {
   }
   section.head {
     width: 100%;
     min-height: 100vh;
-    // @extend .flex;
     text-align: center;
-    background: linear-gradient(
-        to bottom,
-        rgba(99, 66, 255, 0) 0%,
-        rgba(99, 66, 255, 0) 33%,
-        rgba(99, 66, 255, 1) 100%
-      ),
-      url('/images/background-flags.jpg') center center;
-    background-size: cover;
+    // background: linear-gradient(
+    //     to bottom,
+    //     rgba(245, 245, 249, 0) 0%,
+    //     rgba(245, 245, 249, 0) 33%,
+    //     rgba(245, 245, 249, 1) 100%
+    //   ),
+    //   url('/images/background-flags-light.jpg') center center;
+    // background-size: cover;
     .inner {
       p {
         @extend .subtitle-l;
@@ -97,7 +102,7 @@ export default {
   }
   section {
     height: 100%;
-    text-align: center;
+    // text-align: center;
     padding: 30px 0;
   }
 }
@@ -123,14 +128,14 @@ export default {
 // }
 
 .desc {
-  text-align: center;
+  // text-align: center;
   margin: 24vh 0 0;
   @extend .h2;
   color: $grey-3;
 }
 
 .content {
-  max-width: 500px;
+  // max-width: 500px;
   margin: 0 auto;
   padding: 0 30px;
   display: grid;
@@ -152,6 +157,6 @@ export default {
 }
 
 .content p {
-  text-align: center;
+  // text-align: center;
 }
 </style>

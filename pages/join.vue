@@ -19,7 +19,7 @@
       </div>
       <div class="content">
         <p class="">
-          Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
+          Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for. <!-- The key is unity – Join us. -->
         </p>
         <app-form />
       </div>

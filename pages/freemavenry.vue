@@ -39,7 +39,7 @@
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
           <p>
-            <span class="truth">There is no greater force for changing the world than the power of unity through knowledge.</span>
+            <span class="truth">There is no greater force for changing the world than the power of <nuxt-link to="/join">unity</nuxt-link> through <nuxt-link to="/natural-law">knowledge</nuxt-link>.</span>
           </p>
           <p>
             Freemavenry is a non-religious, non-political, fraternal and benevolent organization. Its roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, spirituality, symbology and consciousness.
@@ -223,8 +223,8 @@ export default {
 }
 
 .sg-icon {
-  margin-top: -3vh;
-  margin-bottom: 4vh;
+  margin-top: -4vh;
+  margin-bottom: 8vh;
   width: 66px;
   height: 66px;
 }

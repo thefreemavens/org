@@ -63,8 +63,8 @@ h4 {
 
 p {
   @include fp(font-size, 15, 18);
-  @include fp(margin-top, 22, 32);
-  @include fp(margin-bottom, 22, 32);
+  // @include fp(margin-top, 22, 32);
+  // @include fp(margin-bottom, 22, 32);
   text-align: left;
 }
 

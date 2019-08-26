@@ -15,11 +15,6 @@
   display: grid;
   grid-template-columns: 1fr;
   &.two-columns {
-    .col1 {
-      & > p:last-of-type {
-        margin-bottom: 0; // remove extra space betweeb <p> on a single column
-      }
-    }
     @include desktop {
       grid-template-columns: 1fr 1fr;
       max-width: 920px;
