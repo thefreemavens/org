@@ -1,5 +1,5 @@
 <template>
-  <div class="main dark-theme">
+  <div class="main">
 
     <section
       v-scroll-reveal.reset

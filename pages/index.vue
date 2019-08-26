@@ -1,74 +1,72 @@
 <template>
-  <div>
-    <section class="main">
+  <section class="main">
+
+    <div
+      v-scroll-reveal.reset="{ duration: 3300, scale: 1 }"
+      class="side-a">
+
+      <div class="poster">
+        <div class="inner">
+          <nuxt-link to="/freemavenry">
+            <app-logomark
+              logo-style="line"
+              height="66px" 
+              width="66px" 
+              class="logo"
+            />
+          </nuxt-link>
+          <nuxt-link
+            to="/freemavenry"
+            class="linkless">
+            <h1 class="title"><span class="pre">The Free</span><span>Mavens</span></h1>
+          </nuxt-link>
+        </div>
+        <h3>Worldwide</h3>
+      </div>
+
+    </div>
+
+    <div class="side-b">
+      <div
+        v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
+        class="feature natural-law">
+        <nuxt-link
+          to="/natural-law"
+          class="link-alt">
+          <div class="inner">
+            <icon
+              icon-name="natural-law"
+              icon-color="none"
+              icon-stroke-color="#fff"
+              icon-stroke-width="14"
+              width="60"
+              height="60">
+              <icon-natural-law />
+            </icon>
+            <h2>Natural Law</h2>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/natural-law">
+          <div class="image" />
+        </nuxt-link>
+      </div>
 
       <div
-        v-scroll-reveal.reset="{ duration: 3300, scale: 1 }"
-        class="side-a">
-
-        <div class="poster">
-          <div class="inner">
-            <nuxt-link to="/freemavenry">
-              <app-logomark
-                logo-style="line"
-                height="66px" 
-                width="66px" 
-                class="logo"
-              />
-            </nuxt-link>
-            <nuxt-link
-              to="/freemavenry"
-              class="linkless">
-              <h1 class="title"><span class="pre">The Free</span><span>Mavens</span></h1>
-            </nuxt-link>
-          </div>
-          <h3>Worldwide</h3>
-        </div>
-
-      </div>
-
-      <div class="side-b">
-        <div
-          v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
-          class="feature natural-law">
+        v-scroll-reveal="{ duration: 2300, delay: 450, scale: 1 }"
+        class="feature join">
+        <div class="inner">
           <nuxt-link
-            to="/natural-law"
-            class="link-alt">
-            <div class="inner">
-              <icon
-                icon-name="natural-law"
-                icon-color="none"
-                icon-stroke-color="#fff"
-                icon-stroke-width="14"
-                width="60"
-                height="60">
-                <icon-natural-law />
-              </icon>
-              <h2>Natural Law</h2>
-            </div>
-          </nuxt-link>
-          <nuxt-link to="/natural-law">
-            <div class="image" />
+            to="/join"
+            class="h3 link-alt btn-alt">
+            Be a Maven
           </nuxt-link>
         </div>
-
-        <div
-          v-scroll-reveal="{ duration: 2300, delay: 450, scale: 1 }"
-          class="feature join">
-          <div class="inner">
-            <nuxt-link
-              to="/join"
-              class="h3 link-alt btn-alt">
-              Be a Maven
-            </nuxt-link>
-          </div>
-          <nuxt-link to="/join">
-            <div class="image" />
-          </nuxt-link>
-        </div>
+        <nuxt-link to="/join">
+          <div class="image" />
+        </nuxt-link>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
