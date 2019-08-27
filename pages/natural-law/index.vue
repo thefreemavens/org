@@ -4,16 +4,18 @@
     <section
       v-scroll-reveal.reset
       class="head">
-      <icon
-        class="title-icon"
-        icon-name="natural-law"
-        icon-color="none"
-        icon-stroke-color="#fff"
-        icon-stroke-width="14"
-        width="100"
-        height="100">
-        <icon-natural-law />
-      </icon>
+      <nuxt-link to="/">  
+        <icon
+          class="title-icon"
+          icon-name="natural-law"
+          icon-color="none"
+          icon-stroke-color="#fff"
+          icon-stroke-width="14"
+          width="100"
+          height="100">
+          <icon-natural-law />
+        </icon>
+      </nuxt-link>
       <div class="inner">
         <h1>
           <!-- <span class="pre">The Real</span> -->
@@ -32,7 +34,7 @@
         v-scroll-reveal
         class="title"><span class="pre">About The</span><span>Seminar</span>
       </h1>
-      <div v-scroll-reveal="{ delay: 300 }">     
+      <div v-scroll-reveal="{ delay: 300 }">  
         <icon
           class="sg-icon"
           icon-name="sg8"
@@ -51,23 +53,23 @@
             <span class="truth">This seminar is free, open and required by all to self-educate and share.</span>
           </p>
           <p>
-            Watch, listen and learn the real Law of Attraction and how to apply it in your life so you too can benefit from this body of inspiring and empowering occulted knowledge.
+            Watch, listen and learn the Real Law of Attraction and how to apply it in your life so you too can benefit from this great body of inspiring and empowering knowledge.
           </p>
           <p>
-            The seminar is required to know and act on the information given for anyone who wishes to join The Free Mavens.
+            There are only two mistakes one can make on the path to truth: not starting and not going all the way. This seminar will take you all the way.
           </p>
         </div>
         <div
           v-scroll-reveal="{ delay: 300 }"
           class="col2">
           <p>
-            There are only two mistakes one can make on the path to truth: not starting and not going all the way. This seminar will take you all the way.
-          </p>
-          <p>
             As a whole, the body of knowledge presented in the seminar has the potential to save humanity from our current state of slavery.
           </p>
           <p>
-            The multi-part presentation format is for educational and reference purposes. Educate Yourself.
+            The multi-part presentation format is for educational and reference purposes.
+          </p>
+          <p>
+            Knowing and acting on the body of knowledge presented in this seminar is required for anyone who wishes to <nuxt-link to="/join">Join The Freemavens</nuxt-link>.
           </p>
         </div>
       </div>
@@ -88,6 +90,37 @@
           icon-stroke-width="6">
           <icon-sg20 />
         </icon>
+      </div>
+      <div class="content two-columns">
+        <div
+          v-scroll-reveal="{ delay: 150 }"
+          class="col1">
+          <p>
+            <span class="truth">This seminar is a Tapestry. It is meant to be taken as a whole, in its entirety.</span>
+          </p>
+          <p>
+            It is highly recommend that you watch the full duration of the seminar, otherwise you will most likely not recognize the patterns inherent to the tapestry.
+          </p>
+        </div>
+        <div
+          v-scroll-reveal="{ delay: 300 }"
+          class="col2">
+          <p>
+            Please learn and understand this information, and put it to practical use in your daily life.
+          </p>
+          <p>
+            New episodes will be published as they become available. The orignal recording and the the full duration of the seminar is available to watch online in three parts.
+            <a
+              href="https://www.youtube.com/watch?v=ASUHN3gNxWo"
+              target="_blank">Part 1</a> | 
+            <a
+              href="https://www.youtube.com/watch?v=57UBuxnicOA"
+              target="_blank">Part 2</a> |
+            <a
+              href="https://www.youtube.com/watch?v=204aGDVa3Vw"
+              target="_blank">Part 3</a>.
+          </p>
+        </div>
       </div>
       <div class="content">
         <div
@@ -167,7 +200,7 @@
       <h1
         v-scroll-reveal
         class="title"><span class="pre">About The Speaker</span><span>Mark Passio</span></h1>
-      <div class="content">
+      <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
@@ -176,6 +209,16 @@
           </p>
           <p>
             Mark has undertaken the task of assembling vast amounts of research in the areas of metaphysics, occultism, spirituality, symbology and consciousness studies.
+          </p>
+        </div>
+        <div
+          v-scroll-reveal="{ delay: 300 }"
+          class="col2">
+          <p>
+            In 2007, Mark began presenting this information in the form of a presentation series entitled
+            <a
+              href="http://www.whatonearthishappening.com"
+              target="_blank">What On Earth Is Happening</a>, with the intention of bringing the implications of this body of knowledge to greater public awareness.
           </p>
           <p>
             The full biography is available on Mark's website -<br>
@@ -336,41 +379,18 @@ export default {
   ol {
     @extend .pure-list;
     text-align: center;
-    margin-top: -6vh;
+    margin-top: 12vh;
   }
 }
 
 .profile-image {
   display: block;
-  margin: 4vh auto 0;
-  width: 132px;
-  height: 132px;
+  margin: 4vh auto 2vh;
   background: url('/images/mark-passio.jpg') center center;
-  background-size: 132px 132px;
+  background-size: cover;
   border-radius: 50%;
   border: 3px solid $white;
+  @include fp(width, 96, 148);
+  @include fp(height, 96, 148);
 }
-
-// .content {
-//   max-width: 520px;
-//   margin: 0 auto;
-//   padding: 0 0;
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   &.two-columns {
-//     .col1 {
-//       & > p:last-of-type {
-//         margin-bottom: 0; // remove extra space betweeb <p> on a single column
-//       }
-//     }
-//     @include desktop {
-//       grid-template-columns: 1fr 1fr;
-//       max-width: 920px;
-//       // max-width: 560px;
-//     }
-//   }
-//   & div {
-//     padding: 0 30px;
-//   }
-// }
 </style>

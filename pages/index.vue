@@ -174,7 +174,7 @@ export default {
 .logo {
   @include fp(width, 66, 128);
   @include fp(height, 66, 128);
-  // margin-top: 200px;
+  margin-bottom: 4vh;
 }
 
 // Custom

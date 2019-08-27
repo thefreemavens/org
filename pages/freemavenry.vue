@@ -44,7 +44,7 @@
             <span class="truth">There is no greater force for changing the world than the power of <nuxt-link to="/join">unity</nuxt-link> through <nuxt-link to="/natural-law">knowledge</nuxt-link>.</span>
           </p>
           <p>
-            The Free Mavens promotes the Great Work and provide a great body of knowledge for researchers, free-thinkers and truth seekers, so that people all over the world can gain a better understanding of the biggest issues faced by the world, and feed a desire to unite and help create a better future for all of us.
+            The Free Mavens promotes the One Great Work and provide a great body of knowledge for researchers, free-thinkers and truth seekers, so that people all over the world can gain a better understanding of the biggest issues faced by the world, and feed a desire to unite and help create a better future for all of us.
           </p>
           <p>
             Freemavenry is a non-religious, non-political, fraternal and benevolent organization. Its roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, spirituality, symbology and consciousness.
