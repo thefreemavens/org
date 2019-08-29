@@ -3,26 +3,16 @@
 
     <section class="head">
       <div class="inner">
-        <h1
+        <app-title
           v-if="error.statusCode === 404"
-          class="title">
-          <span
-            v-scroll-reveal
-            class="pre">
-            Error 404
-          </span>
-          <span v-scroll-reveal="{ dealy: 300 }">
-            Page Not Found
-          </span>
-        </h1>
-        <h1 v-else>
-          <span
-            v-scroll-reveal
-            class="pre">
-            Error
-          </span>
-          <span v-scroll-reveal="{ dealy: 150 }">An error occurred</span>
-        </h1>
+          text-before="Error 404"
+          text="Page Not Found"
+        />
+        <app-title
+          v-else
+          text-before="Error"
+          text="An error occurred"
+        />
       </div>
     </section>
   </div>
@@ -30,11 +20,13 @@
 
 <script>
 import AppButton from '@/components/AppButton'
+import AppTitle from '@/components/AppTitle'
 
 export default {
   layout: 'main',
   components: {
-    AppButton
+    AppButton,
+    AppTitle
   },
   props: {
     error: {

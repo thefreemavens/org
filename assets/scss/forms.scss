@@ -7,7 +7,7 @@
 //
 
 .form {
-  margin: 0 0 0;
+  // margin: 0;
   button {
     display: block;
     margin: 4rem auto;
@@ -28,9 +28,9 @@ fieldset {
 .form-radio,
 .form-group {
   position: relative;
-  margin-top: 2vh;
+  margin-top: 4vh;
   // margin-bottom: 1rem;
-  &.open { z-index: -1; } // Hides form when menu is open
+  // &.open { z-index: -1; } // Hides form when menu is open
 }
 
 .form-inline {
@@ -94,15 +94,15 @@ fieldset {
     pointer-events: none;
     padding-left: $spacer;
     z-index: 1;
-    color: $white;
-    font-size: $base;
-    font-weight: 300;
+    color: $black;
+    font-size: $base * 0.96;
+    // font-weight: 300;
     transition: all $transition-speed ease;
   }
 
   .bar {
     position: relative;
-    border-bottom: ($base / 16) solid $white;
+    border-bottom: ($base / 16) solid $black;
     display: block;
     
     &::before {

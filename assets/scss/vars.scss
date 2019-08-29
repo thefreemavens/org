@@ -30,8 +30,8 @@ $pure-black:          #000000 !default;
 $pure-white:          #FFFFFF !default;
 
 $black:               #0D0D11 !default;
-$grey-1:              #1B1B22 !default;
-$grey-2:              #141418 !default;
+$grey-1:              #141418 !default;
+$grey-2:              #1B1B22 !default;
 $grey-3:              #363745 !default;
 $grey-4:              #6D7081 !default;
 $grey-5:              #989AA7 !default;
@@ -86,12 +86,13 @@ $checkbox-top: 0 !default;
 $radio-margin: $h2 / -4 !default;
 
 // Colors
-$input-color: $white !default;
-$border-color: $white !default;
-$label-color: darken($border-color, 100%) !default;
+$input-color: $black !default;
+$border-color: $black !default;
+// $label-color: darken($border-color, 100%) !default;
+$label-color: $grey-4 !default;
 $active-color: darken($border-color, 10%) !default;
-$focus-color: $white !default;
-$error-color: $white !default;
+$focus-color: $brand !default;
+$error-color: $black !default;
 
 // Animation
 $transition-speed: 0.2s !default;

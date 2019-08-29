@@ -7,11 +7,60 @@
   >      
     <div class="form-group">
       <input
+        v-model="firstName"
+        type="text"
+        required="required"
+        class="form-control"
+        name="entry.1090129806"
+      >
+      <label
+        class="control-label"
+        for="first-name">First Name
+        <span
+          v-if="errors.length"
+          class="error"
+        >
+          <span
+            v-for="error in errors"
+            :key="error.id">{{ error }}
+          </span>
+        </span>
+      </label>
+      <i class="bar" />
+    </div>
+
+    <div class="form-group">
+      <input
+        v-model="lastName"
+        type="text"
+        required="required"
+        class="form-control"
+        name="entry.57994274"
+      >
+      <label
+        class="control-label"
+        for="last-name">Last Name
+        <span
+          v-if="errors.length"
+          class="error"
+        >
+          <span
+            v-for="error in errors"
+            :key="error.id">{{ error }}
+          </span>
+        </span>
+      </label>
+      <i class="bar" />
+    </div>
+
+    <div class="form-group">
+      <input
         v-model="email"
         type="text"
         required="required"
         class="form-control"
         name="entry.1097449195"
+        @blur.native="test()"
       >
       <label
         class="control-label"
@@ -27,16 +76,17 @@
         </span>
       </label>
       <i class="bar" />
-      <!-- <label class="control-label" for="input">Textfield</label><i class="bar"></i> -->
     </div>
 
-    <!--     <p class="legal">
-    <b>Remember:</b> The Free Mavens is not for everyone. Our members consists of free, open minded and truth seekers with a shared goal that is inline with both the <nuxt-link to="/be-a-maven">Mavenry</nuxt-link> ideology and our <nuxt-link to="/structure">method of organization</nuxt-link>. Please take a short read and decide if Freemavenry is for you.
-    </p> -->
+    <p class="legal">
+      <b>Remember:</b> Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
+    </p>
 
     <app-button
       id="contact-form-submit"
-      class="line-w"
+      :disabled="disableStatus()"
+      :button-class="isEmailValid()"
+      class="fill-c wide"
       title="Get Initiated"
     />
 
@@ -55,10 +105,32 @@ export default {
   data: function() {
     return {
       errors: [],
-      email: null
+      firstName: null,
+      lastName: null,
+      email: null,
+      reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
+      isDisabled: true
     }
   },
   methods: {
+    isEmailValid: function() {
+      return this.email == ''
+        ? null
+        : this.reg.test(this.email)
+          ? 'valid-email'
+          : 'invalid-email'
+    },
+    disableStatus: function() {
+      return this.email == ''
+        ? null
+        : this.reg.test(this.email)
+          ? ''
+          : 'disabled'
+    },
+    test: function() {
+      this.isEmailValid
+      this.disableStatus
+    },
     response() {
       var vm = this
       var formElement = vm.$refs.formElement
@@ -82,19 +154,18 @@ export default {
             window.location.href = '/success/'
           })
       }
-    },
-    validEmail: function(email) {
-      // eslint-disable-next-line
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email)
     }
+    // validEmail: function(email) {
+    //   return this.reg.test(this.email)
+    // }
   }
 }
 </script>
 
 <style scoped lang="scss">
 .form {
-  // margin: 80px auto;
+  width: 70%;
+  margin: 8vh 15% 0;
   .error {
     font-size: $h9;
     font-weight: 600;
@@ -106,7 +177,9 @@ export default {
   }
 }
 
-// .legal {
-//   font-size: $h6;
-// }
+.legal {
+  font-size: $h7;
+  margin-top: 4vh;
+  line-height: 1.2rem;
+}
 </style>

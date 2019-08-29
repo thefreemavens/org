@@ -18,7 +18,10 @@
           <nuxt-link
             to="/freemavenry"
             class="linkless">
-            <h1 class="title"><span class="pre">The Free</span><span>Mavens</span></h1>
+            <app-title
+              text-before="The Free"
+              text="Mavens"
+            />
           </nuxt-link>
         </div>
         <h3>Worldwide</h3>
@@ -71,6 +74,7 @@
 
 <script>
 import AppLogomark from '@/components/AppLogomark'
+import AppTitle from '@/components/AppTitle'
 import Icon from '@/components/icons/Icon'
 import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
 
@@ -78,6 +82,7 @@ export default {
   layout: 'main',
   components: {
     AppLogomark,
+    AppTitle,
     Icon,
     IconNaturalLaw
   },
@@ -174,7 +179,8 @@ export default {
 .logo {
   @include fp(width, 66, 128);
   @include fp(height, 66, 128);
-  margin-bottom: 4vh;
+  margin: 0 auto 4vh;
+  display: block;
 }
 
 // Custom

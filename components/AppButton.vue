@@ -53,7 +53,7 @@ button {
   font-weight: 400;
   line-height: $line-height;
   border: 2px solid;
-  transition: all 0.33s ease-in-out;
+  transition: all 0.33s ease;
   letter-spacing: 2px;
   font-size: 13px;
   padding: 10px 26px;
@@ -62,9 +62,9 @@ button {
     padding: 12px 36px;
   }
   &.wide {
-    padding: 10px 46px;
+    padding: 8px 46px;
     @include desktop {
-      padding: 12px 66px;
+      padding: 10px 56px;
     }
   }
 }
@@ -77,7 +77,7 @@ button {
   background: rgba($black, 1);
   border-color: rgba($black, 0);
   &:hover {
-    background: rgba($black, 0.8);
+    background: rgba($brand, 1);
   }
 }
 
@@ -130,6 +130,17 @@ button {
   &:hover {
     color: $pure-white;
     border-color: $pure-white;
+  }
+}
+
+.invalid-email {
+  @extend .fill;
+  cursor: not-allowed;
+  background: $black;
+  border-color: $black;
+  &:hover {
+    background: $black;
+    border-color: $black;
   }
 }
 </style>

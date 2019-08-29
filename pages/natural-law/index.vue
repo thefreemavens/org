@@ -30,10 +30,10 @@
     </section>
 
     <section>
-      <h1
-        v-scroll-reveal
-        class="title"><span class="pre">About The</span><span>Seminar</span>
-      </h1>
+      <app-title
+        text-before="About The"
+        text="Seminar"
+      />
       <div v-scroll-reveal="{ delay: 300 }">  
         <icon
           class="sg-icon"
@@ -76,10 +76,10 @@
     </section>
 
     <section class="episodes">
-      <h1
-        v-scroll-reveal
-        class="title"><span class="pre">List Of</span><span>Episodes</span>
-      </h1>
+      <app-title
+        text-before="List Of"
+        text="Episodes"
+      />
       <div v-scroll-reveal="{ delay: 300 }">     
         <icon
           class="sg-icon"
@@ -197,9 +197,10 @@
       <div
         v-scroll-reveal
         class="profile-image" />
-      <h1
-        v-scroll-reveal
-        class="title"><span class="pre">About The Speaker</span><span>Mark Passio</span></h1>
+      <app-title
+        text-before="About The Speaker"
+        text="Mark Passio"
+      />
       <div class="content two-columns">
         <div
           v-scroll-reveal="{ delay: 150 }"
@@ -270,6 +271,7 @@
 
 <script>
 // import AppLogomark from '@/components/AppLogomark'
+import AppTitle from '@/components/AppTitle'
 import Icon from '@/components/icons/Icon'
 import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
 import IconSg8 from '@/components/icons/IconSg8'
@@ -281,6 +283,7 @@ export default {
   layout: 'main',
   components: {
     // AppLogomark,
+    AppTitle,
     Icon,
     IconNaturalLaw,
     IconSg8,
@@ -317,7 +320,7 @@ export default {
   width: 100%;
   // height: 100vh;
   // color: $white;
-  background: $grey-2;
+  background: $grey-1;
   @include tablet {
     // grid-template-columns: 1fr 1fr;
   }

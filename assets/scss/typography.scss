@@ -75,17 +75,17 @@ p {
 ////////////////////////////////////////////////////
 // Monteserat based titles
 
-.title {
-  @extend .h1;
-  @include fp(margin-top, 0, 99);
-  @include fp(margin-bottom, 33, 66);
-  span {
-    display: block;
-    &.pre {
-      @extend .h3;
-    }
-  }
-}
+// .title {
+//   @extend .h1;
+//   @include fp(margin-top, 0, 99);
+//   @include fp(margin-bottom, 33, 66);
+//   span {
+//     display: block;
+//     &.pre {
+//       @extend .h3;
+//     }
+//   }
+// }
 
 ////////////////////////////////////////////////////
 // Roboto based subtitles

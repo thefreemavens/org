@@ -11,7 +11,11 @@
         />
       </nuxt-link>
       <div class="inner">
-        <h1 class="title"><span class="pre">The</span><span>FreeMavens</span></h1>
+        <app-title
+          text-before="The"
+          text="FreeMavens"
+        />
+        <!-- <h1 class="title"><span class="pre">The</span><span>FreeMavens</span></h1> -->
         <!-- <p>For the well-being of all beings</p> -->
       </div>
       <!-- <p class="desc">Free Seminar</p> -->
@@ -21,10 +25,10 @@
     </section>
 
     <section>
-      <h1
-        v-scroll-reveal
-        class="title"><span class="pre">What is</span><span>Freemavenry</span>
-      </h1>
+      <app-title
+        text-before="What is"
+        text="Freemavenry"
+      />
       <div v-scroll-reveal>     
         <icon
           class="sg-icon"
@@ -64,10 +68,10 @@
     </section>
 
     <section id="principles">
-      <h1
-        v-scroll-reveal
-        class="title"><span class="pre">Our Three great</span><span>Principles</span>
-      </h1>
+      <app-title
+        text-before="Our Three Great"
+        text="Principles"
+      />
       <div v-scroll-reveal>
         <icon
           class="sg-icon"
@@ -101,10 +105,10 @@
     </section>
 
     <section>
-      <h1
-        v-scroll-reveal
-        class="title"><span class="pre">Becoming a</span><span>Freemaven</span>
-      </h1>
+      <app-title
+        text-before="Becoming a"
+        text="Freemaven"
+      />
       <div v-scroll-reveal>
         <icon
           class="sg-icon"
@@ -124,14 +128,14 @@
             The Journey of a Lifetime starts here.
           </p>
           <p>
-            Becoming a Free Maven is like going on a journey: from joining as an Apprentice, it typically takes one or two years to become a Master Maven, with each of the three stages marked by a special acknowledgment.
+            Becoming a Free Maven is like going on a journey: from joining as an Entered Apprentice, it typically takes one or two years to become a Master Maven, with each of the three stages marked by a special acknowledgment.
           </p>
         </div>
         <div
           v-scroll-reveal="{ delay: 300 }"
           class="col2">
           <p>
-            The essential qualification for admission is abiding by the <a v-scroll-to="'#principles'">Three Great Principles</a> and knowing the <nuxt-link to="/natural-law">Real Law of Attraction</nuxt-link> while applying it in your day-to-day life.
+            The essential qualification for admission is abiding by the <a v-scroll-to="'#principles'">Three Great Principles</a> and understanding the <nuxt-link to="/natural-law">Real Law of Attraction</nuxt-link> while applying it in the day-to-day life.
           </p>
           <p class="litebox">
             Membership is open to all men and women of integrity who can fulfill this essential qualification. 
@@ -157,6 +161,7 @@
 <script>
 import AppLogomark from '@/components/AppLogomark'
 import AppButton from '@/components/AppButton'
+import AppTitle from '@/components/AppTitle'
 import Icon from '@/components/icons/Icon'
 import IconSg3 from '@/components/icons/IconSg3'
 import IconSg8 from '@/components/icons/IconSg8'
@@ -168,6 +173,7 @@ export default {
   components: {
     AppLogomark,
     AppButton,
+    AppTitle,
     Icon,
     IconSg3,
     IconSg8,

@@ -25,7 +25,7 @@
           You'll be provided with future updates and additional information that is relevant to your initiation process including further steps you'll need to take to complete your initiation with The Freemavens.
         </p>
         <p>
-          <b>Remember:</b> We only accept initiates who are free, open-minded and truth-seekers with a shared goal that is inline with <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> principles and what we stand for.
+          <b>Remember:</b> We only accept initiates who are free, open-minded and truth-seekers with a shared goal that is aligned with the <nuxt-link to="/freemavenry">Freemavens</nuxt-link> principles and what we stand for.
         </p>
       </div>
       <app-footer/>

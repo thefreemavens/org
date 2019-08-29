@@ -1,57 +1,65 @@
 <template>
-  <div class="main dark-theme">
+  <section class="main">
 
-    <section
-      v-scroll-reveal.reset
-      class="head">
-      <nuxt-link to="/">
-        <app-logomark
-          logo-style="line-w"
-          class="logo title-icon"
+    <div
+      v-scroll-reveal.reset="{ duration: 3300, scale: 1 }"
+      class="side-a">
+
+      <div class="poster image">
+        <div class="inner" />
+      </div>
+    </div>
+
+    <div class="side-b">
+      <div
+        v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
+        class="poster form">
+        <nuxt-link to="/">
+          <app-logomark
+            logo-style="line"
+            class="logo"
+          />
+        </nuxt-link>
+        <app-title
+          title-size="title-sm"
+          text="Initiation"
+          text-after="Form"
         />
-      </nuxt-link>
-      <div class="inner">
-        <h1>
-          <!-- <span class="pre">The Real</span> -->
-          <span>Be a Maven</span>
-        </h1>
-        <!-- <p>The real Law of Attraction and how to apply it in your life</p> -->
-      </div>
-      <div class="content">
-        <p class="">
-          Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for. <!-- The key is unity – Join us. -->
-        </p>
+
         <app-form />
+
       </div>
 
-    </section>
-
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
 import AppLogomark from '@/components/AppLogomark'
+import AppTitle from '@/components/AppTitle'
 import AppForm from '@/components/AppForm'
+import Icon from '@/components/icons/Icon'
+import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
 
 export default {
   layout: 'main',
   components: {
     AppLogomark,
-    AppForm
+    AppTitle,
+    AppForm,
+    Icon,
+    IconNaturalLaw
   },
   head() {
     return {
-      title: 'The Free Mavens | Join',
+      title: 'The Free Mavens',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'The real Law of Attraction and how to apply it in your life'
+          content: 'The Free Mavens Organization Official Website.'
         }
-      ],
-      bodyAttrs: {
-        class: 'brand-theme'
-      }
+      ]
     }
   }
 }
@@ -59,62 +67,84 @@ export default {
 
 <style scoped lang="scss">
 .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
   width: 100%;
-  background: $brand;
+  min-height: 100vh;
+  min-height: stretch;
+  color: $black;
   @include tablet {
-  }
-  section.head {
-    width: 100%;
-    min-height: 100vh;
-    // @extend .flex;
-    text-align: center;
-    background: linear-gradient(
-        to bottom,
-        rgba(99, 66, 255, 0) 0%,
-        rgba(99, 66, 255, 0) 33%,
-        rgba(99, 66, 255, 1) 100%
-      ),
-      url('/images/background-flags.jpg') center center;
-    background-size: cover;
-    .inner {
-      p {
-        @extend .subtitle-l;
-        margin-top: -1vh;
-        // padding: 0 30px;
-      }
-    }
-  }
-  section {
-    height: 100%;
-    text-align: center;
-    padding: 30px 0;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.title-icon {
-  display: block;
-  margin: 5vh auto 8vh;
-  width: 66px;
-  height: 66px;
+.side-a {
+  display: none;
+  @include tablet {
+    display: inherit;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: 10;
+  // width: 50%;
 }
-
-// .sg-icon {
-//   margin-top: -3vh;
-//   margin-bottom: 4vh;
-//   width: 66px;
-//   height: 66px;
-// }
-
-// .subtitle {
-//   color: $grey-6;
-//   position: relative;
-//   bottom: 2vh;
-// }
-
-.desc {
+.feature,
+.poster {
   text-align: center;
-  margin: 24vh 0 0;
-  @extend .h2;
-  color: $grey-3;
+  position: relative;
 }
+
+// 100vh
+.poster {
+  min-height: 100vh;
+  &.form {
+    // background: $grey-2;
+  }
+  &.image {
+    background: $grey-2;
+  }
+  h3 {
+    @extend .h4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: $grey-6;
+  }
+  @include phone {
+    height: 100%;
+  }
+  .inner {
+    @extend .v-center;
+    height: 100%;
+    max-width:: 26.333vw;
+    position: absolute;
+    display: block;
+    background-image: url('/images/flower-of-life.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.logo {
+  @include fp(width, 55, 66);
+  @include fp(height, 55, 66);
+  // @extend .center;
+  margin: 8vh 0 0;
+  // display: block;
+}
+
+// Custom
+// .natural-law .image {
+//   background-image: url('/images/flower-of-life.png');
+// }
+// .join .image {
+//   background-image: url('/images/background-flags.jpg');
+// }
 </style>
