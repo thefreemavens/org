@@ -10,7 +10,7 @@ module.exports = {
     title: 'The Free Mavens',
     meta: [
       { charset: 'utf-8' },
-      { name: 'description', content: 'Be a Maven @TheFremmavens. #freemavenry' },
+      { name: 'description', content: 'Be a Maven @TheFreemavens. #freemavenry' },
       { name: 'apple-mobile-web-app-title', content: 'TheFreemavens.org' },
       { name: 'application-name', content: 'TheFreemavens.org' },
       { property: 'og:title', content: 'TheFreemavens.org'},
@@ -20,7 +20,7 @@ module.exports = {
       { name: 'twitter:card', content: 'summary_large_image'},
       { name: 'twitter:site', content: '@thefreemavens'},
       { name: 'twitter:title', content: 'TheFreemavens.org'},
-      { name: 'twitter:description', content: 'Be a Maven @TheFremmavens https://thefreemavens.org #freemavenry'},
+      { name: 'twitter:description', content: 'Be a Maven @TheFreemavens https://thefreemavens.org #freemavenry'},
       { name: 'twitter:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'msapplication-TileColor', content: '#6342ff' },
