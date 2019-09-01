@@ -57,7 +57,6 @@ h4 {
   @include fp(font-size, 20, 26);
   @include fp(margin-top, 22, 34);
   @include fp(margin-bottom, 22, 34);
-  font-weight: 300;
   text-align: left;
 }
 
@@ -66,6 +65,12 @@ p {
   // @include fp(margin-top, 22, 32);
   // @include fp(margin-bottom, 22, 32);
   text-align: left;
+  &.sm {
+    @include fp(font-size, 14, 16);
+  }
+  // &.xs {
+  //   @include fp(font-size, 12, 14);
+  // }
 }
 
 // .legal {

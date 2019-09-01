@@ -5,7 +5,9 @@
     class="form"
     @submit.prevent="response"
   >      
-    <div class="form-group">
+    <div
+      v-scroll-reveal="{ duration: 1999, delay: 999 }"
+      class="form-group">
       <input
         v-model="firstName"
         type="text"
@@ -29,7 +31,9 @@
       <i class="bar" />
     </div>
 
-    <div class="form-group">
+    <div
+      v-scroll-reveal="{ duration: 1999, delay: 1111 }"
+      class="form-group">
       <input
         v-model="lastName"
         type="text"
@@ -53,7 +57,9 @@
       <i class="bar" />
     </div>
 
-    <div class="form-group">
+    <div
+      v-scroll-reveal="{ duration: 1999, delay: 1222 }"
+      class="form-group">
       <input
         v-model="email"
         type="text"
@@ -78,17 +84,21 @@
       <i class="bar" />
     </div>
 
-    <p class="legal">
+    <p
+      v-scroll-reveal="{ duration: 1999, delay: 1333 }"
+      class="legal">
       <b>Remember:</b> Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
     </p>
 
-    <app-button
-      id="contact-form-submit"
-      :disabled="disableStatus()"
-      :button-class="isEmailValid()"
-      class="fill-c wide"
-      title="Get Initiated"
-    />
+    <div v-scroll-reveal="{ duration: 2333, delay: 1666 }">
+      <app-button
+        id="contact-form-submit"
+        :disabled="disableStatus()"
+        :button-class="isEmailValid()"
+        class="fill-c wide"
+        title="Get Initiated"
+      />
+    </div>
 
   </form>
 </template>
@@ -126,10 +136,6 @@ export default {
         : this.reg.test(this.email)
           ? ''
           : 'disabled'
-    },
-    test: function() {
-      this.isEmailValid
-      this.disableStatus
     },
     response() {
       var vm = this

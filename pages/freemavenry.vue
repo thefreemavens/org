@@ -12,8 +12,8 @@
       </nuxt-link>
       <div class="inner">
         <app-title
-          text-before="The"
-          text="FreeMavens"
+          text-before="The Free"
+          text="Mavens"
         />
         <!-- <h1 class="title"><span class="pre">The</span><span>FreeMavens</span></h1> -->
         <!-- <p>For the well-being of all beings</p> -->
@@ -232,7 +232,7 @@ export default {
 
 .title-icon {
   display: block;
-  margin: 8vh auto 16vh;
+  margin: 6vh auto 10vh;
   @include fp(width, 66, 102);
   @include fp(height, 66, 102);
 }

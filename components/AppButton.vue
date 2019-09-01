@@ -55,16 +55,16 @@ button {
   border: 2px solid;
   transition: all 0.33s ease;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 12px;
   padding: 10px 26px;
   @include desktop {
-    font-size: 14px;
-    padding: 12px 36px;
+    font-size: 13px;
+    padding: 11px 33px;
   }
   &.wide {
     padding: 8px 46px;
     @include desktop {
-      padding: 10px 56px;
+      padding: 9px 56px;
     }
   }
 }

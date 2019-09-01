@@ -24,7 +24,7 @@ export default {
 footer {
   max-width: 920px;
   margin: 0 auto;
-  padding: 33px 30px 66px;
+  padding: 0 30px 33px;
 }
 .logotype {
   // padding-bottom: 66px;

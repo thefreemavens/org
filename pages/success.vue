@@ -1,74 +1,93 @@
 <template>
-  <div class="main">
+  <section class="main">
 
-    <section
-      v-scroll-reveal.reset
-      class="head">
-      <nuxt-link to="/">
-        <app-logomark
-          logo-style="line"
-          class="logo title-icon"
+    <div
+      v-scroll-reveal.reset="{ duration: 2666, scale: 1 }"
+      class="side-a">
+
+      <div class="poster image">
+        <div class="inner" />
+      </div>
+    </div>
+
+    <div class="side-b">
+      <div
+        class="poster form">
+        <nuxt-link
+          v-scroll-reveal="{ duration: 1999, delay: 666 }"
+          to="/">
+          <app-logomark
+            logo-style="line"
+            class="logo"
+          />
+        </nuxt-link>
+        <app-title
+          v-scroll-reveal="{ duration: 1999, delay: 999 }"
+          title-size="title-sm"
+          text="Initiation"
+          text-after="Step I"
         />
-      </nuxt-link>
-      <div class="inner">
-        <h1>
-          <!-- <span class="pre">The Real</span> -->
-          <span>Congrats!</span>
-        </h1>
-        <!-- <p>The real Law of Attraction and how to apply it in your life</p> -->
-      </div>
-      <div class="content">
-        <p>
-          Your email has been registered and added to our list of initiates.
-        </p>
-        <p>
-          You'll be provided with future updates and additional information that is relevant to your initiation process including further steps you'll need to take to complete your initiation with The Freemavens.
-        </p>
-        <p>
-          <b>Remember:</b> We only accept initiates who are free, open-minded and truth-seekers with a shared goal that is aligned with the <nuxt-link to="/freemavenry">Freemavens</nuxt-link> principles and what we stand for.
-        </p>
-      </div>
-      <app-footer/>
-    </section>
-    <!-- <app-footer/> -->
 
-  </div>
+        <div
+          v-scroll-reveal="{ duration: 1999, delay: 1111 }"
+          class="content">
+          <!-- <p class="truth">
+          Welcome, please read:
+          Thank you for choosing light over darkness.
+          </p> -->
+          <p>
+            Your email was added to our List of Initiates.
+          </p>
+          <p>
+            Our email verification process is a bit unconventional. The next step for your initiation will be mailed to you within 6 days.
+          </p>
+          <p>
+            In the meantime, we invite you to join our public group where we share our public announcements.
+          </p>
+          <a
+            v-scroll-reveal="{ duration: 2333, delay: 1666 }"
+            href="https://www.facebook.com/freemavenry/"
+            target="_blank">
+            <app-button
+              class="fill-c wide"
+              title="Join Public Group"
+            />
+          </a>
+        </div>
+        <!-- <app-footer v-scroll-reveal="{ duration: 1999 }"/> -->
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 import AppLogomark from '@/components/AppLogomark'
-// import Icon from '@/components/icons/Icon'
-// import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
-// import IconSg8 from '@/components/icons/IconSg8'
-// import IconSg20 from '@/components/icons/IconSg20'
-// import AppForm from '@/components/AppForm'
+import AppButton from '@/components/AppButton'
 import AppFooter from '@/components/AppFooter'
+import AppTitle from '@/components/AppTitle'
+import Icon from '@/components/icons/Icon'
+import IconNaturalLaw from '@/components/icons/IconNaturalLaw'
 
 export default {
   layout: 'main',
   components: {
     AppLogomark,
-    // Icon,
-    // IconNaturalLaw,
-    // IconSg8,
-    // IconSg20,
-    // AppForm,
-    AppFooter
+    AppButton,
+    AppFooter,
+    AppTitle,
+    Icon,
+    IconNaturalLaw
   },
   head() {
     return {
-      title: 'The Free Mavens',
+      title: 'The Free Mavens | Initiation Confirmation',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'You have been initiated.'
+          content: 'The Free Mavens Initiation Confirmation.'
         }
-      ],
-      bodyAttrs: {
-        class: ''
-        // class: this.modalOpen ? 'm-open' : 'm-close'
-      }
+      ]
     }
   }
 }
@@ -76,87 +95,97 @@ export default {
 
 <style scoped lang="scss">
 .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
   width: 100%;
-  // background: $white;
+  min-height: 100vh;
+  min-height: stretch;
+  color: $black;
   @include tablet {
+    grid-template-columns: 1fr 1fr;
   }
-  section.head {
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    // background: linear-gradient(
-    //     to bottom,
-    //     rgba(245, 245, 249, 0) 0%,
-    //     rgba(245, 245, 249, 0) 33%,
-    //     rgba(245, 245, 249, 1) 100%
-    //   ),
-    //   url('/images/background-flags-light.jpg') center center;
-    // background-size: cover;
-    .inner {
-      p {
-        @extend .subtitle-l;
-        // margin-top: -1vh;
-        padding: 0 30px;
-      }
-    }
-  }
-  section {
-    height: 100%;
-    // text-align: center;
-    padding: 30px 0;
-  }
-}
-
-.title-icon {
-  display: block;
-  margin: 5vh auto 8vh;
-  width: 66px;
-  height: 66px;
-}
-
-// .sg-icon {
-//   margin-top: -3vh;
-//   margin-bottom: 4vh;
-//   width: 66px;
-//   height: 66px;
-// }
-
-// .subtitle {
-//   color: $grey-6;
-//   position: relative;
-//   bottom: 2vh;
-// }
-
-.desc {
-  // text-align: center;
-  margin: 24vh 0 0;
-  @extend .h2;
-  color: $grey-3;
 }
 
 .content {
-  // max-width: 500px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  &.columns-2 {
-    .col1 {
-      & > p:last-of-type {
-        margin-bottom: 0; // remove extra space betweeb <p> on a single column
-      }
-    }
-    @include desktop {
-      // grid-template-columns: 1fr 1fr;
-      // max-width: 920px;
-    }
-  }
-  & div {
-    padding: 0 30px;
+  margin-top: 6vh;
+  width: 85%;
+  p {
+    @extend p.sm;
   }
 }
 
-.content p {
-  // text-align: center;
+.side-a {
+  display: none;
+  @include tablet {
+    display: inherit;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: 10;
+  // width: 50%;
 }
+.feature,
+.poster {
+  text-align: center;
+  position: relative;
+}
+
+// 100vh
+.poster {
+  min-height: 100vh;
+  &.form {
+    // background: $grey-2;
+  }
+  &.image {
+    background: $brand;
+    background: $grey-2;
+  }
+  h3 {
+    @extend .h4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: $grey-6;
+  }
+  @include phone {
+    height: 100%;
+  }
+  .inner {
+    @extend .v-center;
+    height: 100%;
+    max-width:: 26.333vw;
+    position: absolute;
+    display: block;
+    background-image: url('/images/flower-of-life.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+p.truth {
+  // color: $grey-4;
+}
+
+.logo {
+  @include fp(width, 55, 66);
+  @include fp(height, 55, 66);
+  // @extend .center;
+  margin: 8vh 0 0;
+  // display: block;
+}
+
+// Custom
+// .natural-law .image {
+//   background-image: url('/images/flower-of-life.png');
+// }
+// .join .image {
+//   background-image: url('/images/background-flags.jpg');
+// }
 </style>

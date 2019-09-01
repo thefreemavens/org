@@ -252,7 +252,7 @@ hr {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.33s ease-out;
+  transition: opacity 0.23s ease-out;
 }
 
 .page-enter,
@@ -261,30 +261,30 @@ hr {
   // transform-origin: 50% 50%;
 }
 
-// Layout transitions
-.layout-enter-active,
-.layout-leave-active {
-  transition: opacity 0.33s ease-out;
-}
+// // Layout transitions
+// .layout-enter-active,
+// .layout-leave-active {
+//   transition: opacity 0.33s ease-out;
+// }
 
-.layout-enter,
-.layout-leave-active {
-  opacity: 0;
-}
+// .layout-enter,
+// .layout-leave-active {
+//   opacity: 0;
+// }
 
-// Layout transitions
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.33s ease-out;
-}
+// // Layout transitions
+// .fade-enter-active,
+// .fade-leave-active {
+//   transition: opacity 0.33s ease-out;
+// }
 
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
+// .fade-enter,
+// .fade-leave-active {
+//   opacity: 0;
+// }
 
-.fade-enter-active,
-.fade-enter {
-  transition-delay: 0.33s;
-}
+// .fade-enter-active,
+// .fade-enter {
+//   transition-delay: 0.33s ease-out;
+// }
 

@@ -69,7 +69,7 @@
             The multi-part presentation format is for educational and reference purposes.
           </p>
           <p>
-            Knowing and acting on the body of knowledge presented in this seminar is required for anyone who wishes to <nuxt-link to="/join">Join The Freemavens</nuxt-link>.
+            Knowing and acting on the body of knowledge presented in this seminar is required for anyone who wishes to <nuxt-link to="/join">Join</nuxt-link> The Freemavens.
           </p>
         </div>
       </div>

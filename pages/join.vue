@@ -2,7 +2,7 @@
   <section class="main">
 
     <div
-      v-scroll-reveal.reset="{ duration: 3300, scale: 1 }"
+      v-scroll-reveal.reset="{ duration: 2666, scale: 1 }"
       class="side-a">
 
       <div class="poster image">
@@ -12,15 +12,17 @@
 
     <div class="side-b">
       <div
-        v-scroll-reveal="{ duration: 2300, delay: 300, scale: 1 }"
         class="poster form">
-        <nuxt-link to="/">
+        <nuxt-link
+          v-scroll-reveal="{ duration: 1999, delay: 666 }"
+          to="/">
           <app-logomark
             logo-style="line"
             class="logo"
           />
         </nuxt-link>
         <app-title
+          v-scroll-reveal="{ duration: 1999, delay: 999 }"
           title-size="title-sm"
           text="Initiation"
           text-after="Form"
@@ -28,6 +30,8 @@
 
         <app-form />
 
+        <!-- <app-footer /> -->
+        
       </div>
 
     </div>
@@ -36,6 +40,7 @@
 
 <script>
 import AppLogomark from '@/components/AppLogomark'
+import AppFooter from '@/components/AppFooter'
 import AppTitle from '@/components/AppTitle'
 import AppForm from '@/components/AppForm'
 import Icon from '@/components/icons/Icon'
@@ -45,6 +50,7 @@ export default {
   layout: 'main',
   components: {
     AppLogomark,
+    AppFooter,
     AppTitle,
     AppForm,
     Icon,
@@ -106,6 +112,7 @@ export default {
     // background: $grey-2;
   }
   &.image {
+    background: $brand;
     background: $grey-2;
   }
   h3 {
