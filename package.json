@@ -1,8 +1,8 @@
 {
-  "name": "TheFreeMavens",
+  "name": "TheFreemavens",
   "version": "1.0.0",
-  "description": "Unite Within",
-  "author": "TFM",
+  "description": "The Free Mavens",
+  "author": "Maven",
   "private": true,
   "scripts": {
     "dev": "HOST=0.0.0.0 nuxt",

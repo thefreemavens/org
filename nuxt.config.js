@@ -82,7 +82,7 @@ module.exports = {
   },
   pwa: {
     icon: false,
-    // meta: false,
+    meta: false,
     manifest: false
     // oneSignal: false
   },

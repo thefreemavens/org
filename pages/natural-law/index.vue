@@ -298,7 +298,17 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'The real Law of Attraction and how to apply it in your life'
+          content: 'The Real Law of Attraction and how to apply it in your life'
+        },
+        // {
+        //   hid: 'description',
+        //   name: 'description',
+        //   content: 'My custom description'
+        // }
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: 'Natural Law Seminar'
         }
       ],
       bodyAttrs: {
