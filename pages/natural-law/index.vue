@@ -306,7 +306,7 @@ export default {
         //   content: 'My custom description'
         // }
         {
-          hid: 'og-title',
+          hid: 'og:title',
           property: 'og:title',
           content: 'Natural Law Seminar'
         }

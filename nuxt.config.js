@@ -13,7 +13,7 @@ module.exports = {
       { name: 'description', content: 'Be a Maven @TheFreemavens. #freemavenry' },
       { name: 'apple-mobile-web-app-title', content: 'TheFreemavens.org' },
       { name: 'application-name', content: 'TheFreemavens.org' },
-      { property: 'og:title', content: 'TheFreemavens.org'},
+      { hid: 'og:title', property: 'og:title', content: 'TheFreemavens.org'},
       { property: 'og:url', content: 'https://thefreemavens.org'},
       { property: 'og:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
       { property: 'og:description', content: 'Be a Maven @TheFreemavens. #freemavenry'},
