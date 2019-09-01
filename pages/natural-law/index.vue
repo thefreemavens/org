@@ -309,6 +309,21 @@ export default {
           hid: 'og:title',
           property: 'og:title',
           content: 'Natural Law Seminar'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://thefreemavens.org/natural-law'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://thefreemavens.org/images/the-free-mavens-flag.jpg'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Natural Law Seminar'
         }
       ],
       bodyAttrs: {
