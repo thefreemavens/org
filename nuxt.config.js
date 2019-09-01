@@ -16,7 +16,7 @@ module.exports = {
       { property: 'og:title', content: 'TheFreemavens.org'},
       { property: 'og:url', content: 'https://thefreemavens.org'},
       { property: 'og:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
-      { property: 'og:description', content: 'Be a Maven @TheFremmavens. #freemavenry'},
+      { property: 'og:description', content: 'Be a Maven @TheFreemavens. #freemavenry'},
       { name: 'twitter:card', content: 'summary_large_image'},
       { name: 'twitter:site', content: '@thefreemavens'},
       { name: 'twitter:title', content: 'TheFreemavens.org'},
