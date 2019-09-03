@@ -14,3 +14,7 @@ git commit -m 'Deploy'
 git push -f
 
 # git push -u --force origin master
+
+
+# All together now...
+# git add -A && git commit -m 'Deploy' && git push -f

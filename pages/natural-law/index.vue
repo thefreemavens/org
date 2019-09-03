@@ -127,61 +127,61 @@
           class="col1">
           <ol>
             <episodes-li
-              number="1"
+              :number="1"
               title="Before We Begin"
               link="https://youtu.be/PnIVtZElymw"
               duration="3:33"
             />
             <episodes-li
-              number="2"
+              :number="2"
               title="Presentation Style"
               link="https://youtu.be/ft74HDhZ66s"
               duration="3:35"
             />
             <episodes-li
-              number="3"
+              :number="3"
               title="Prerequisites"
               link="https://youtu.be/M0_9IVemAKo"
               duration="4:52"
             />
             <episodes-li
-              number="4"
+              :number="4"
               title="Teachability"
             />
             <episodes-li
-              number="5"
+              :number="5"
               title="Belief Systems"
             />
             <episodes-li
-              number="6"
+              :number="6"
               title="Requirements"
             />
             <episodes-li
-              number="7"
+              :number="7"
               title="The role of Knowledge"
             />
             <episodes-li
-              number="8"
+              :number="8"
               title="Occult Knowledge"
             />
             <episodes-li
-              number="9"
+              :number="9"
               title="Nescience vs. Ignorance"
             />
             <episodes-li
-              number="10"
+              :number="10"
               title="Why Are We Losing Freedom?"
             />
             <episodes-li
-              number="11"
+              :number="11"
               title="The Master Key"
             />
             <episodes-li
-              number="12"
+              :number="12"
               title="Problem Solving"
             />
             <episodes-li
-              number="13"
+              :number="13"
               title="What Truth is"
             />
             <!--             <episodes-li

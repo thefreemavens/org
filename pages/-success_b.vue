@@ -27,6 +27,58 @@
         <p>
           <b>Remember:</b> We only accept initiates who are free, open-minded and truth-seekers with a shared goal that is aligned with the <nuxt-link to="/freemavenry">Freemavens</nuxt-link> principles and what we stand for.
         </p>
+
+        <span>Subject: You’re invited to make a difference!</span>
+        <p>
+          Dear friend,
+        </p>
+
+        <p>
+          Thank you for your interest in joining The Free Mavens.
+        </p>
+
+        <p>
+          Your invitation code is:<br>
+          <a href="https://www.facebook.com/groups/119762302071944"><b>5555</b></a>
+        </p>
+
+        <p>
+          <b>Next, follow these steps:</b>
+        </p>
+
+        <ol>
+          <li>
+            Like our main <a href="https://www.facebook.com/thefreemaven/">Facebook Page</a>.
+          </li>
+          <li>
+            Join our main <a href="https://www.facebook.com/groups/119762302071944">Facebook Group</a>.
+          </li>
+          <li>
+            When prompted, enter your Invititation Code.
+          </li>
+        </ol>
+
+        <p>
+          Once you have completed all steps, we will follow-up and provide you with information on our Initiation Process.
+        </p>
+
+        <p>
+          On behalf of all members of The Free Mavens community, we thank and welcome your wish to make a difference.
+        </p>
+
+        <p />
+
+        <a
+          href="https://thefreemavens.org"
+          title="thefreemavens.org">
+          <img
+            src="https://thefreemavens.org/android-chrome-192x192.png"
+            width="66px">
+        </a>
+        <p>
+          The Free Mavens<br>
+          <a href="https://thefreemavens.org">https://thefreemavens.org</a>
+        </p>
       </div>
       <app-footer/>
     </section>

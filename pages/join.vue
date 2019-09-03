@@ -85,6 +85,11 @@ export default {
   }
 }
 
+// .form {
+//   width: 70%;
+//   margin: 8vh 15% 0;
+// }
+
 .side-a {
   display: none;
   @include tablet {

@@ -37,8 +37,8 @@ export default {
   // name: 'btn'
   props: {
     number: {
-      type: String,
-      default: '0'
+      type: Number,
+      default: 0
     },
     title: {
       type: String,
