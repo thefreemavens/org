@@ -15,8 +15,7 @@
         class="poster form">
         <nuxt-link
           v-scroll-reveal="{ duration: 1999, delay: 666 }"
-          to="/"
-          class="wrapper">
+          to="/">
           <app-logomark
             logo-style="line"
             class="logo"
@@ -78,8 +77,8 @@ export default {
   grid-template-columns: 1fr;
   position: relative;
   width: 100%;
-  // min-height: 100vh;
-  // min-height: stretch;
+  min-height: 100vh;
+  min-height: stretch;
   color: $black;
   @include tablet {
     grid-template-columns: 1fr 1fr;
@@ -88,7 +87,7 @@ export default {
 
 .form {
   width: 70%;
-  margin: 0 15% 0;
+  margin: 8vh 15% 0;
 }
 
 .side-a {
@@ -113,7 +112,7 @@ export default {
 
 // 100vh
 .poster {
-  // min-height: 100vh;
+  min-height: 100vh;
   &.form {
     // background: $grey-2;
   }
@@ -129,6 +128,9 @@ export default {
     right: 0;
     color: $grey-6;
   }
+  @include phone {
+    height: 100%;
+  }
   .inner {
     @extend .v-center;
     height: 100%;
@@ -142,15 +144,12 @@ export default {
   }
 }
 
-.wrapper {
-  margin: 8vh 0 0;
-  display: inline-block;
-}
-
 .logo {
   @include fp(width, 55, 66);
   @include fp(height, 55, 66);
   // @extend .center;
+  margin: 8vh 0 0;
+  // display: block;
 }
 
 // Custom

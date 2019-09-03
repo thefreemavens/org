@@ -15,7 +15,8 @@
         class="poster form">
         <nuxt-link
           v-scroll-reveal="{ duration: 1999, delay: 666 }"
-          to="/">
+          to="/"
+          class="wrapper">
           <app-logomark
             logo-style="line"
             class="logo"
@@ -173,12 +174,15 @@ p.truth {
   // color: $grey-4;
 }
 
+.wrapper {
+  margin: 8vh 0 0;
+  display: inline-block;
+}
+
 .logo {
   @include fp(width, 55, 66);
   @include fp(height, 55, 66);
   // @extend .center;
-  margin: 8vh 0 0;
-  // display: block;
 }
 
 // Custom

@@ -2,7 +2,7 @@
   <form
     id="join"
     ref="formElement"
-    class="form"
+    class=""
     @submit.prevent="response"
   >      
     <div
@@ -66,7 +66,6 @@
         required="required"
         class="form-control"
         name="entry.1097449195"
-        @blur.native="test()"
       >
       <label
         class="control-label"
@@ -125,16 +124,16 @@ export default {
   methods: {
     isEmailValid: function() {
       return this.email == ''
-        ? null
+        ? ''
         : this.reg.test(this.email)
           ? 'valid-email'
           : 'invalid-email'
     },
     disableStatus: function() {
       return this.email == ''
-        ? null
+        ? ''
         : this.reg.test(this.email)
-          ? ''
+          ? null
           : 'disabled'
     },
     response() {
@@ -153,25 +152,31 @@ export default {
           .post(url, formData)
           .then(function(response) {
             console.log(response)
+            // this.$router.push('/natural-law/')
             window.location.href = '/success/'
           })
           .catch(function(error) {
             console.log(error)
+            // this.$router.push('/')
             window.location.href = '/success/'
           })
       }
+    },
+    validEmail: function(email) {
+      return this.reg.test(this.email)
     }
-    // validEmail: function(email) {
-    //   return this.reg.test(this.email)
-    // }
   }
 }
 </script>
 
 <style scoped lang="scss">
+form {
+  margin-bottom: 0;
+  padding: 0;
+}
 .form {
-  width: 70%;
-  margin: 8vh 15% 0;
+  // width: 70%;
+  // margin: 8vh 15% 0;
   .error {
     font-size: $h9;
     font-weight: 600;
@@ -186,6 +191,7 @@ export default {
 .legal {
   font-size: $h7;
   margin-top: 4vh;
+  margin-bottom: 8vh;
   line-height: 1.2rem;
 }
 </style>
