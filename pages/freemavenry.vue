@@ -45,7 +45,7 @@
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
           <p>
-            <span class="truth">There is no greater force for changing the world than the power of <nuxt-link to="/join">unity</nuxt-link> through <nuxt-link to="/natural-law">knowledge</nuxt-link>.</span>
+            <span class="truth">There is no greater force for changing the world than the power of <nuxt-link to="/initiation">unity</nuxt-link> through <nuxt-link to="/natural-law">knowledge</nuxt-link>.</span>
           </p>
           <p>
             The Free Mavens promotes the One Great Work and provide a great body of knowledge for researchers, free-thinkers and truth seekers, so that people all over the world can gain a better understanding of the biggest issues faced by the world, and feed a desire to unite and help create a better future for all of us.
@@ -143,7 +143,7 @@
         </div>
       </div>
       <nuxt-link
-        to="/join"
+        to="/initiation"
         class="cta">
         <app-button
           v-scroll-reveal="{ delay: 300 }"

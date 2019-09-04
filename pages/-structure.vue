@@ -166,7 +166,7 @@
       Together, we create a strong bind and an effcient way to communicate and transfer information.
     </p>
 
-    <nuxt-link to="/join">
+    <nuxt-link to="/initiation">
       <app-button
         title="Join The Hive"
         class="fill-c"

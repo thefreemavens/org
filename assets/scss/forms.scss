@@ -67,9 +67,10 @@ fieldset {
 
 .form-group {
   text-align: left;
+  margin-bottom: 3vh;
   // scss-lint:disable QualifyingElement, NestingDepth
   input {
-    height: ($base * 1.9);
+    height: ($base * 2.3);
     text-align: left;
   }
 
@@ -354,3 +355,8 @@ fieldset {
 //     }
 //   }
 // }
+
+input:valid {
+  // background: lighten($brand, 34);
+  background: none;
+}

@@ -4,9 +4,19 @@
     ref="formElement"
     class=""
     @submit.prevent="response"
-  >      
+  >
+
+    <p
+      class="legal">
+      Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
+    </p>
+    <hr>
+
+    <h3 class="">
+      Contact
+    </h3>
+
     <div
-      v-scroll-reveal="{ duration: 1999, delay: 999 }"
       class="form-group">
       <input
         v-model="firstName"
@@ -32,7 +42,6 @@
     </div>
 
     <div
-      v-scroll-reveal="{ duration: 1999, delay: 1111 }"
       class="form-group">
       <input
         v-model="lastName"
@@ -58,7 +67,6 @@
     </div>
 
     <div
-      v-scroll-reveal="{ duration: 1999, delay: 1222 }"
       class="form-group">
       <input
         v-model="email"
@@ -83,13 +91,132 @@
       <i class="bar" />
     </div>
 
-    <p
-      v-scroll-reveal="{ duration: 1999, delay: 1333 }"
-      class="legal">
-      <b>Remember:</b> Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
+    <h3 class="application">
+      Application
+    </h3>
+    <p class="legal">
+      Man and women of integrity who wishes to get initiated and join The Freemavens must first understand the foundations to our great body of knowledge.
+    </p>
+    <p class="legal">
+      Learn the first 3 episodes of our <nuxt-link to="/natural-law/">Natural Law Series</nuxt-link> and answer the following 3 questions.
     </p>
 
-    <div v-scroll-reveal="{ duration: 2333, delay: 1666 }">
+    <h4 class="question">
+      Question 1
+    </h4>
+    <p
+      class="legal">
+      As to be understood from
+      <a
+        href="https://youtu.be/PnIVtZElymw"
+        target="_blank">
+      Episode 1</a>, what does the old saying "There is nothing new under the sun" means?
+    </p>
+
+    <div
+      class="form-group">
+      <input
+        v-model="answerA"
+        type="text"
+        required="required"
+        class="form-control"
+        name="entry.568051769"
+      >
+      <label
+        class="control-label"
+        for="user-email">Answer
+        <span
+          v-if="errors.length"
+          class="error"
+        >
+          <span
+            v-for="error in errors"
+            :key="error.id">{{ error }}
+          </span>
+        </span>
+      </label>
+      <i class="bar" />
+    </div>
+
+    <h4 class="question">
+      Question 2
+    </h4>
+    <p
+      class="legal">
+      As to be understood from
+      <a
+        href="https://youtu.be/ft74HDhZ66s"
+        target="_blank">
+      Episode 2</a>, Truth, by its very nature, is Beligerent. Why so?
+    </p>
+
+    <div
+      class="form-group">
+      <input
+        v-model="answerB"
+        type="text"
+        required="required"
+        class="form-control"
+        name="entry.660058584"
+      >
+      <label
+        class="control-label"
+        for="user-email">Answer
+        <span
+          v-if="errors.length"
+          class="error"
+        >
+          <span
+            v-for="error in errors"
+            :key="error.id">{{ error }}
+          </span>
+        </span>
+      </label>
+      <i class="bar" />
+    </div>
+
+    <h4 class="question">Question 3</h4>
+    <p
+      class="legal">
+      As to be understood from
+      <a
+        href="https://youtu.be/M0_9IVemAKo"
+        target="_blank">
+      Episode 3</a>, what is considered to be a Logical Fallacy?
+    </p>
+
+    <div
+      class="form-group">
+      <input
+        v-model="answerC"
+        type="text"
+        required="required"
+        class="form-control"
+        name="entry.1154524792"
+      >
+      <label
+        class="control-label"
+        for="user-email">Answer
+        <span
+          v-if="errors.length"
+          class="error"
+        >
+          <span
+            v-for="error in errors"
+            :key="error.id">{{ error }}
+          </span>
+        </span>
+      </label>
+      <i class="bar" />
+    </div>
+
+    <ol>
+      <li>All submissions are private and will never be published.</li>
+      <li>Submissions that are not in the English language will be rejected.</li>
+      <li>Processing may take up to 6 days.</li>
+    </ol>
+
+    <div>
       <app-button
         id="contact-form-submit"
         :disabled="disableStatus()"
@@ -117,6 +244,9 @@ export default {
       firstName: null,
       lastName: null,
       email: null,
+      answerA: null,
+      answerB: null,
+      answerC: null,
       reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
       isDisabled: true
     }
@@ -152,13 +282,13 @@ export default {
           .post(url, formData)
           .then(function(response) {
             console.log(response)
-            // this.$router.push('/natural-law/')
-            window.location.href = '/success/'
+            $nuxt.$router.push('/success/')
+            // window.location.href = '/success/'
           })
           .catch(function(error) {
             console.log(error)
-            // this.$router.push('/')
-            window.location.href = '/success/'
+            $nuxt.$router.push('/success/')
+            // window.location.href = '/success/'
           })
       }
     },
@@ -170,28 +300,81 @@ export default {
 </script>
 
 <style scoped lang="scss">
-form {
-  margin-bottom: 0;
-  padding: 0;
+// form {
+//   margin-bottom: 0;
+//   padding: 0;
+// }
+// .form {
+//   width: 70%;
+//   margin: 8vh 15% 0;
+//   .error {
+//     font-size: $h9;
+//     font-weight: 600;
+//     margin-left: 10px;
+//     letter-spacing: 0.5px;
+//     text-transform: uppercase;
+//     color: $black;
+//     // background: $black;
+//   }
+// }
+
+// input:valid {
+//   // background: lighten($brand, 34);
+//   background: none;
+// }
+
+.questions {
+  margin-top: 8vh;
 }
-.form {
-  // width: 70%;
-  // margin: 8vh 15% 0;
-  .error {
-    font-size: $h9;
-    font-weight: 600;
-    margin-left: 10px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: $black;
-    // background: $black;
-  }
+
+.application {
+  margin-top: 13vh;
+}
+
+h3 {
+  margin-top: 8vh;
+  text-align: left;
+}
+
+h4 {
+  @extend .h4;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 10vh 0 3vh;
 }
 
 .legal {
-  font-size: $h7;
-  margin-top: 4vh;
+  font-size: $h6;
+  // margin-top: 6vh;
+  // margin-bottom: 6vh;
+  line-height: 1.4rem;
+}
+
+button {
+  display: block;
+  margin-top: 13vh;
   margin-bottom: 8vh;
-  line-height: 1.2rem;
+}
+
+ol {
+  margin: 8vh 0;
+  font-size: $h8;
+  line-height: 1rem;
+  display: table;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: table-row;
+    counter-increment: table-ol;
+    &::before {
+      content: counter(table-ol) '.';
+      display: table-cell;
+      padding-right: 1vw;
+      padding-top: 1vh;
+      text-align: right;
+    }
+  }
 }
 </style>

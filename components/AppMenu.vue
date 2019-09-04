@@ -66,10 +66,10 @@
                   </li>
                   <li>
                     <nuxt-link
-                      to="/join/"
-                      title="Join"
+                      to="/initiation/"
+                      title="Initiation"
                     >
-                      Be A Maven
+                      Initiation
                     </nuxt-link>
                   </li>
                 </ul>

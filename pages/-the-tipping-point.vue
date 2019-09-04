@@ -139,7 +139,7 @@
       A Maven, a Connector, or a Salesman, which Archetype are you?
     </p>
 
-    <nuxt-link to="/join">
+    <nuxt-link to="/initiation">
       <app-button
         title="Choose Archetype"
         class="fill-c"

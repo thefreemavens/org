@@ -156,11 +156,11 @@ sup {
 //
 
 ol {
-  text-align: left;
-  padding-left: 1rem;
-  margin-bottom: 4rem;
-  @include tablet {
-    padding-left: 3rem;
+  padding-left: 0;
+  // word-break: break-all;
+  li {
+    // margin-left: 1rem;
+    // list-style-position: inside;
   }
 }
 

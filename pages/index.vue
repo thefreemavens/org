@@ -59,12 +59,12 @@
         class="feature join">
         <div class="inner">
           <nuxt-link
-            to="/join"
+            to="/initiation"
             class="h3 link-alt btn-alt">
             Be a Maven
           </nuxt-link>
         </div>
-        <nuxt-link to="/join">
+        <nuxt-link to="/initiation">
           <div class="image" />
         </nuxt-link>
       </div>

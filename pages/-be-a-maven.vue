@@ -17,7 +17,7 @@
           The Free Mavens provide a platform for researchers, free-thinkers and truth seekers, so that people all over the world can gain a better understanding of the biggest issues faced by the world, and feed a desire to unite and help create a better future for all of us. Core to this goal is a belief that there is no greater force for changing the world than the power of knowledge.
         </p>
 
-        <nuxt-link to="/join">
+        <nuxt-link to="/initiation">
           <app-button
             title="Be A Maven"
             class="fill-c"

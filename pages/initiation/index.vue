@@ -2,7 +2,7 @@
   <section class="main">
 
     <div
-      v-scroll-reveal.reset="{ duration: 2666, scale: 1 }"
+      v-scroll-reveal="{ duration: 2666, scale: 1 }"
       class="side-a">
 
       <div class="poster image">
@@ -12,7 +12,7 @@
 
     <div class="side-b">
       <div
-        class="poster form">
+        class="poster">
         <nuxt-link
           v-scroll-reveal="{ duration: 1999, delay: 666 }"
           to="/"
@@ -29,9 +29,9 @@
           text-after="Form"
         />
 
-        <app-form />
+        <app-form v-scroll-reveal="{ duration: 1999, delay: 1111 }" />
 
-        <!-- <app-footer /> -->
+        <app-footer />
         
       </div>
 
@@ -86,9 +86,10 @@ export default {
   }
 }
 
-.form {
-  width: 70%;
-  margin: 0 15% 0;
+.feature,
+.poster {
+  text-align: center;
+  position: relative;
 }
 
 .side-a {
@@ -99,24 +100,19 @@ export default {
     top: 0;
     height: 100vh;
   }
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // z-index: 10;
-  // width: 50%;
 }
-.feature,
-.poster {
-  text-align: center;
-  position: relative;
+
+.side-b .poster {
+  width: 70%;
+  margin: 0 15% 0;
+  form {
+    display: block;
+    margin-top: 8vh;
+  }
 }
 
 // 100vh
 .poster {
-  // min-height: 100vh;
-  &.form {
-    // background: $grey-2;
-  }
   &.image {
     background: $brand;
     background: $grey-2;
@@ -152,6 +148,13 @@ export default {
   @include fp(height, 55, 66);
   // @extend .center;
 }
+
+// .legal {
+//   font-size: $h6;
+//   // margin-top: 6vh;
+//   // margin-bottom: 6vh;
+//   line-height: 1.4rem;
+// }
 
 // Custom
 // .natural-law .image {

@@ -8,6 +8,8 @@
 h1 { @extend .h1; }
 h2 { @extend .h2; }
 h3 { @extend .h3; }
+h4 { @extend .h4; }
+h5 { @extend .h5; }
 
 .h1,
 .h2,
@@ -52,13 +54,20 @@ h3 { @extend .h3; }
   // @include fp(margin-bottom, 22, 34);
   // font-weight: 500;
 }
-// AppBlockQuote
-h4 {
-  @include fp(font-size, 20, 26);
-  @include fp(margin-top, 22, 34);
-  @include fp(margin-bottom, 22, 34);
-  text-align: left;
+.h5 {
+  @include fp(font-size, 11, 14);
+  @include fp(letter-spacing, 1, 2);
+  // @include fp(margin-top, 22, 34);
+  // @include fp(margin-bottom, 22, 34);
+  // font-weight: 500;
 }
+// AppBlockQuote
+// h4 {
+//   @include fp(font-size, 20, 26);
+//   @include fp(margin-top, 22, 34);
+//   @include fp(margin-bottom, 22, 34);
+//   text-align: left;
+// }
 
 p {
   @include fp(font-size, 15, 18);
