@@ -70,10 +70,11 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
+  // axios: {
+  //   // See https://github.com/nuxt-community/axios-module#options
+  // },
   styleResources: {
      // your settings here
     scss: [
@@ -84,7 +85,10 @@ module.exports = {
     icon: false,
     meta: false,
     manifest: false
-    // oneSignal: false
+  },
+  sitemap: {
+    hostname: 'https://thefreemavens.org',
+    gzip: true
   },
 
   /*
