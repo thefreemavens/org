@@ -91,6 +91,30 @@
       <i class="bar" />
     </div>
 
+    <div
+      class="form-group">
+      <input
+        v-model="invitation"
+        type="text"
+        class="form-control nr"
+        name="entry.1263827797"
+      >
+      <label
+        class="control-label"
+        for="user-email">Invitation #
+        <span
+          v-if="errors.length"
+          class="error"
+        >
+          <span
+            v-for="error in errors"
+            :key="error.id">{{ error }}
+          </span>
+        </span>
+      </label>
+      <i class="bar" />
+    </div>
+
     <h3 class="application">
       Application
     </h3>
@@ -244,6 +268,7 @@ export default {
       firstName: null,
       lastName: null,
       email: null,
+      invitation: '13060694016',
       answerA: null,
       answerB: null,
       answerC: null,
@@ -281,13 +306,13 @@ export default {
         axios
           .post(url, formData)
           .then(function(response) {
-            console.log(response)
-            $nuxt.$router.push('/success/')
+            // console.log(response)
+            $nuxt.$router.push('/initiation/confirmation')
             // window.location.href = '/success/'
           })
           .catch(function(error) {
-            console.log(error)
-            $nuxt.$router.push('/success/')
+            // console.log(error)
+            $nuxt.$router.push('/initiation/confirmation')
             // window.location.href = '/success/'
           })
       }
@@ -377,4 +402,8 @@ ol {
     }
   }
 }
+// input:required {
+//   // box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
+//   border-bottom: 1px solid red;
+// }
 </style>

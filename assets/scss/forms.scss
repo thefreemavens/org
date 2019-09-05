@@ -145,7 +145,7 @@ fieldset {
   select,
   input:focus,
   input:valid,
-  input.form-file,
+  // input:required:not(:valid),
   input.has-value,
   textarea:focus,
   textarea:valid,
@@ -160,6 +160,16 @@ fieldset {
       left: 0;
     }
   }
+
+  // input:required:valid {
+  //   // background:#777;
+  //   ~ .control-label {
+  //     font-size: $base;
+  //     color: $active-color;
+  //     top: 0;
+  //     left: 50;
+  //   }
+  // }
 
   select,
   input,
