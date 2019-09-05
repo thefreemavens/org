@@ -57,7 +57,7 @@ export default {
   top: 4px;
   cursor: pointer;
   svg {
-    // stroke: $black;
+    stroke: $black;
     fill: none;
     margin: 0 10px; // Space around icon
   }

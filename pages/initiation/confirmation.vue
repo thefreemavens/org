@@ -37,10 +37,10 @@
           Thank you for choosing light over darkness.
           </p> -->
           <p>
-            Your email was added to our List of Initiates.
+            Congratulations! The next step in your initiation will be emailed to you within 6 days.
           </p>
           <p>
-            Our email verification process is a bit unconventional. The next step for your initiation will be mailed to you within 6 days.
+            Our review process is non-automatic, we review each applicant by hand to assure a healthy growth of our community with individuals who strive for high moral standards and share a can-do attitude.
           </p>
           <p>
             In the meantime, we invite you to join our public group where we share our public announcements.
@@ -51,7 +51,7 @@
             target="_blank">
             <app-button
               class="fill-c wide"
-              title="Join Public Group"
+              title="Join Group"
             />
           </a>
         </div>
