@@ -58,10 +58,10 @@
           v-scroll-reveal="{ delay: 300 }"
           class="col2">
           <p>
-            <span class="truth-alt">Free</span><br>The word Free means not under the control or in the power of another; able to act or be done as one wishes.
+            <span class="truth-alt">Free</span><br>The word <i>Free</i> means not under the control or in the power of another; able to act or be done as one wishes.
           </p>
           <p>
-            <span class="truth-alt">Maven</span><br>The word maven comes from the Yiddish meyvn, meaning "one who understands." To be a maven you have to more than just understand a topic, you have to know its ins and outs. Often mavens are the people that  you turn to as experts in a field. You don't become a maven overnight. That kind of expertise   understanding comes with an accumulation of knowledge over the years.
+            <span class="truth-alt">Maven</span><br>The word <i>Maven</i> comes from the Yiddish <i>Meyvn</i>, meaning "one who understands." To be a Maven you have to more than just understand a topic, you have to know its ins and outs. Often Mavens are the people that you turn to as experts in a field. You don't become a Maven overnight. That kind of expertise and understanding comes with an accumulation of knowledge over the years.
           </p>
         </div>
       </div>

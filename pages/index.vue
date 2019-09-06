@@ -5,7 +5,7 @@
       v-scroll-reveal.reset="{ duration: 3300, scale: 1 }"
       class="side-a">
 
-      <div class="poster">
+      <div class="poster freemavenry">
         <div class="inner">
           <nuxt-link to="/freemavenry">
             <app-logomark
@@ -124,7 +124,9 @@ export default {
 // 100vh
 .poster {
   min-height: 100vh;
-  background: $white;
+  overflow: hidden;
+  // background: $white;
+  // background-size: cover;
   h3 {
     @extend .h4;
     position: absolute;
@@ -138,6 +140,9 @@ export default {
   }
   .inner {
     @extend .v-center;
+    z-index: 10;
+    padding: 0;
+    // position: relative;
     // width: 100%;
   }
 }
@@ -148,16 +153,6 @@ export default {
   background-size: cover;
   height: 50vh;
   overflow: hidden;
-  .image {
-    width: 100%;
-    height: 100%;
-    background-position: 50% 50%;
-    background-size: cover;
-    transition: all 0.666s ease-out;
-    &:hover {
-      transform: scale(1.06);
-    }
-  }
   .inner {
     @extend .v-center;
     z-index: 10;
@@ -176,18 +171,35 @@ export default {
   }
 }
 
-.logo {
-  @include fp(width, 66, 128);
-  @include fp(height, 66, 128);
-  margin: 0 auto 4vh;
-  display: block;
+.image {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: all 0.666s ease-out;
+  &:hover {
+    transform: scale(1.06);
+  }
 }
 
-// Custom
+// IMAGES
+.freemavenry {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url('/images/background-flags-light.jpg');
+}
+
 .natural-law .image {
   background-image: url('/images/background-naturalLaw.jpg');
 }
 .join .image {
   background-image: url('/images/background-flags.jpg');
+}
+
+.logo {
+  @include fp(width, 66, 128);
+  @include fp(height, 66, 128);
+  margin: 0 auto 4vh;
+  display: block;
 }
 </style>
