@@ -59,7 +59,7 @@ module.exports = {
   */
   plugins: [
     '~plugins/vue-scrollto.js',
-    { src: '~plugins/ga.js', ssr: false },
+    // { src: '~plugins/ga.js', ssr: false },
     { src: '~/plugins/vue-scroll-reveal', ssr: false }
   ],
 
@@ -72,12 +72,9 @@ module.exports = {
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
+    '@nuxtjs/google-analytics'
   ],
-  // axios: {
-  //   // See https://github.com/nuxt-community/axios-module#options
-  // },
   styleResources: {
-     // your settings here
     scss: [
       './assets/scss/main.scss'
     ],
@@ -91,6 +88,15 @@ module.exports = {
     hostname: 'https://thefreemavens.org',
     gzip: true
   },
+  googleAnalytics: {
+    id: 'UA-106917561-2'
+  },
+
+  // //to test GA in dev
+  // debug: {
+  //   enabled: true,
+  //   sendHitTask: true
+  // },
 
   /*
   ** Build configuration
