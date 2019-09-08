@@ -129,19 +129,19 @@
             <episodes-li
               :number="1"
               title="Before We Begin"
-              link="https://youtu.be/PnIVtZElymw"
+              link="https://youtu.be/q8sQf-QtXbY"
               duration="3:33"
             />
             <episodes-li
               :number="2"
               title="Presentation Style"
-              link="https://youtu.be/ft74HDhZ66s"
+              link="https://youtu.be/qBvzoNi0d6c"
               duration="3:35"
             />
             <episodes-li
               :number="3"
               title="Prerequisites"
-              link="https://youtu.be/M0_9IVemAKo"
+              link="https://youtu.be/RxBXdMfBE1A"
               duration="4:52"
             />
             <episodes-li
