@@ -53,7 +53,7 @@
             <span class="truth">This seminar is free, open and required by all to self-educate and share.</span>
           </p>
           <p>
-            Watch, listen and learn the Real Law of Attraction and how to apply it in your life so you too can benefit from this great body of inspiring and empowering knowledge.
+            Watch, listen and learn the Real Law of Attraction and how to apply it in your life so you too can benefit from this great body of inspiring and empowering body of knowledge.
           </p>
           <p>
             There are only two mistakes one can make on the path to truth: not starting and not going all the way. This seminar will take you all the way.
