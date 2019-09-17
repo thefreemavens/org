@@ -8,7 +8,7 @@
 
     <p
       class="legal">
-      Our members consists of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
+      Our members consist of free, open minded and truth seekers with a shared goal that is aligned with our principles and what <nuxt-link to="/freemavenry">Freemavenry</nuxt-link> stands for.
     </p>
     <hr>
 
@@ -119,10 +119,10 @@
       Application
     </h3>
     <p class="legal">
-      Man and women of integrity who wishes to get initiated and join The Freemavens must first understand the foundations to our great body of knowledge.
+      Men and women of integrity who wishes to get initiated and join The Freemavens must first understand the foundations to our great body of knowledge.
     </p>
     <p class="legal">
-      Learn the first 3 episodes of our <nuxt-link to="/natural-law/">Natural Law Series</nuxt-link> and answer the following 3 questions.
+      Learn the first 3 episodes of our <nuxt-link to="/natural-law/">Natural Law Series</nuxt-link> and answer the following 3 questions:
     </p>
 
     <h4 class="question">
@@ -132,7 +132,7 @@
       class="legal">
       As to be understood from
       <a
-        href="https://youtu.be/PnIVtZElymw"
+        href="https://youtu.be/q8sQf-QtXbY"
         target="_blank">
       Episode 1</a>, what does the old saying "There is nothing new under the sun" means?
     </p>
@@ -169,7 +169,7 @@
       class="legal">
       As to be understood from
       <a
-        href="https://youtu.be/ft74HDhZ66s"
+        href="https://youtu.be/qBvzoNi0d6c"
         target="_blank">
       Episode 2</a>, Truth, by its very nature, is Beligerent. Why so?
     </p>
@@ -204,7 +204,7 @@
       class="legal">
       As to be understood from
       <a
-        href="https://youtu.be/M0_9IVemAKo"
+        href="https://youtu.be/RxBXdMfBE1A"
         target="_blank">
       Episode 3</a>, what is considered to be a Logical Fallacy?
     </p>

@@ -99,7 +99,7 @@
             <span class="truth">This seminar is a Tapestry. It is meant to be taken as a whole, in its entirety.</span>
           </p>
           <p>
-            It is highly recommend that you watch the full duration of the seminar, otherwise you will most likely not recognize the patterns inherent to the tapestry.
+            It is highly recommended that you watch the full duration of the seminar, otherwise you will most likely not recognize the patterns inherent to the tapestry.
           </p>
         </div>
         <div
@@ -109,7 +109,7 @@
             Please learn and understand this information, and put it to practical use in your daily life.
           </p>
           <p>
-            New episodes will be published as they become available. The orignal recording and the the full duration of the seminar is available to watch online in three parts.
+            New episodes will be published as they become available. The original recording and the the full duration of the seminar is available to watch online in three parts.
             <a
               href="https://www.youtube.com/watch?v=ASUHN3gNxWo"
               target="_blank">Part 1</a> | 
