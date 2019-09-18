@@ -128,17 +128,17 @@
             The Journey of a Lifetime starts here.
           </p>
           <p>
-            Becoming a Free Maven is like going on a journey: from joining as an Entered Apprentice, it typically takes one or two years to become a Master Maven, with each of the three stages marked by a special acknowledgment.
+            Becoming a Free Maven is like going on a journey: from joining as an Entered Maven, it typically takes one or two years to become a Master Maven, with each of the three stages marked by a special acknowledgment.
           </p>
         </div>
         <div
           v-scroll-reveal="{ delay: 300 }"
           class="col2">
           <p>
-            The essential qualification for admission is abiding by the <a v-scroll-to="'#principles'">Three Great Principles</a> and understanding the <nuxt-link to="/natural-law">Real Law of Attraction</nuxt-link> while applying it in the day-to-day life.
+            The essential qualifications for admission are abiding by our <a v-scroll-to="'#principles'">Three Great Principles</a> and understanding the <nuxt-link to="/natural-law">Real Law of Attraction</nuxt-link>, while applying it in the day-to-day life.
           </p>
           <p class="litebox">
-            Membership is open to all men and women of integrity who can fulfill this essential qualification. 
+            Membership is open to all men and women of integrity who can fulfill these essential qualifications. 
           </p>
         </div>
       </div>
