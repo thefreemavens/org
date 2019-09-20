@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'The Free Mavens',
+    title: 'The Freemavens',
     meta: [
       { charset: 'utf-8' },
       { name: 'description', content: 'Be a Maven @TheFreemavens. #freemavenry' },
