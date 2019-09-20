@@ -184,7 +184,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Free Mavens | Freemavenry',
+      title: 'The Freemavens | Freemavenry',
       meta: [
         {
           hid: 'description',

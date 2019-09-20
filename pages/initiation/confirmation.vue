@@ -81,7 +81,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Free Mavens | Initiation Confirmation',
+      title: 'The Freemavens | Initiation Confirmation',
       meta: [
         {
           hid: 'description',

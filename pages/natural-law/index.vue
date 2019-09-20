@@ -293,7 +293,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Free Mavens | Natural Law',
+      title: 'The Freemavens | Natural Law',
       meta: [
         {
           hid: 'description',

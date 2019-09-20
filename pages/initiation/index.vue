@@ -59,7 +59,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Free Mavens',
+      title: 'The Freemavens',
       meta: [
         {
           hid: 'description',
