@@ -268,7 +268,6 @@ export default {
       firstName: null,
       lastName: null,
       email: null,
-      // invitation: '13060694016',
       answerA: null,
       answerB: null,
       answerC: null,

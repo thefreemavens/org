@@ -11,21 +11,18 @@
         />
       </nuxt-link>
       <div class="inner">
-        <h1 class="title">
-          <span class="pre">
-            You Are Our
-          </span>
-          Newest hero
-        </h1>
-        <!-- <p>For the well-being of all beings</p> -->
+        <a v-scroll-to="'#thanks'">
+          <h1 class="title">
+            <span class="pre">
+              {{ name1 }} You Are Our
+            </span>
+            Newest hero
+          </h1>
+        </a>
       </div>
-      <!-- <p class="desc">Free Seminar</p> -->
-      <!-- <h3>Worldwide</h3> -->
-      <!-- </div> -->
-
     </section>
 
-    <section>
+    <section id="thanks">
       <app-title
         text-before="A big"
         text="Thank You"
@@ -46,7 +43,7 @@
           v-scroll-reveal="{ delay: 150 }"
           class="col1">
           <p>
-            <span class="truth">Dear {{ name }}, you’ve spoken like a true hero!</span>
+            <span class="truth">Dear {{ name2 }}, you’ve spoken like a true hero!</span>
           </p>
           <p>
             On behalf of <nuxt-link to="/">The Freemavens</nuxt-link> and as a member of the community, we’d like to thank you for doing the Great Work and spreading the knowledge of <nuxt-link to="/natiral-law/">Natural Law</nuxt-link>.
@@ -112,11 +109,25 @@ export default {
   },
   data() {
     return {
-      id: this.$route.query.id
+      // id: this.$route.query.id
     }
   },
   computed: {
-    name: function() {
+    id: function() {
+      if (!this.$route.query.id) {
+        return '13060694015'
+      } else {
+        return this.$route.query.id
+      }
+    },
+    name1: function() {
+      if (!this.$route.query.name) {
+        return ''
+      } else {
+        return this.$route.query.name + ', '
+      }
+    },
+    name2: function() {
       if (!this.$route.query.name) {
         return 'friend'
       } else {
