@@ -268,12 +268,21 @@ export default {
       firstName: null,
       lastName: null,
       email: null,
-      invitation: '13060694016',
+      // invitation: '13060694016',
       answerA: null,
       answerB: null,
       answerC: null,
       reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
       isDisabled: true
+    }
+  },
+  computed: {
+    invitation: function() {
+      if (!this.$route.query.id) {
+        return '13060694016'
+      } else {
+        return this.$route.query.id
+      }
     }
   },
   methods: {
