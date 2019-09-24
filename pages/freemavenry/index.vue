@@ -12,8 +12,8 @@
       </nuxt-link>
       <div class="inner">
         <app-title
-          text-before="The Free"
-          text="Mavens"
+          text-before="The"
+          text="Freemavens"
         />
         <!-- <h1 class="title"><span class="pre">The</span><span>FreeMavens</span></h1> -->
         <!-- <p>For the well-being of all beings</p> -->
