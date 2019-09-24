@@ -215,6 +215,10 @@ export default {
     }
   }
 }
+
+a .title {
+  color: $black;
+}
 .litebox {
   // background: lighten($brand, 36);
   // padding: 26px 20px;
