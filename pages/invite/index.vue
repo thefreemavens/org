@@ -58,7 +58,7 @@
       </div>
       <nuxt-link
         v-scroll-reveal="{ delay: 300 }"
-        :to="{ path: 'initiation', query: { id: id } }"
+        :to="{ path: '../initiation/', query: { id: id } }"
         class="cta">
         <app-button
           title="Be a maven"
