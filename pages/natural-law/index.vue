@@ -151,48 +151,54 @@
             />
             <episodes-li
               :number="4"
-              title="Teachability"
+              link="https://youtu.be/c-2rPiG-V8o"
+              title="The Real Natural Law"
+              duration="1:33"
             />
             <episodes-li
               :number="5"
-              title="Belief Systems"
+              title="Teachability"
             />
             <episodes-li
               :number="6"
-              title="Requirements"
+              title="Belief Systems"
             />
             <episodes-li
               :number="7"
-              title="The role of Knowledge"
+              title="Requirements"
             />
             <episodes-li
               :number="8"
-              title="Occult Knowledge"
+              title="The role of Knowledge"
             />
             <episodes-li
               :number="9"
-              title="Nescience vs. Ignorance"
+              title="Occult Knowledge"
             />
             <episodes-li
               :number="10"
-              title="Why Are We Losing Freedom?"
+              title="Nescience vs. Ignorance"
             />
             <episodes-li
               :number="11"
-              title="The Master Key"
+              title="Why Are We Losing Freedom?"
             />
             <episodes-li
               :number="12"
-              title="Problem Solving"
+              title="The Master Key"
             />
             <episodes-li
               :number="13"
+              title="Problem Solving"
+            />
+            <episodes-li
+              :number="14"
               title="What Truth is"
             />
-            <!--             <episodes-li
-            number="14"
-            title="Truth vs. Perception"
-            /> -->
+            <episodes-li
+              number="15"
+              title="Truth vs. Perception"
+            />
           </ol>
         </div>
       </div>

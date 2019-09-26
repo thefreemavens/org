@@ -48,7 +48,7 @@
             <span class="truth">Dear {{ name2 }}, you’ve spoken like a true hero!</span>
           </p>
           <p>
-            On behalf of <nuxt-link to="/">The Freemavens</nuxt-link> and as a member of the community, we’d like to thank you for doing the Great Work and spreading the knowledge of <nuxt-link to="/natiral-law/">Natural Law</nuxt-link>.
+            On behalf of <nuxt-link to="/">The Freemavens</nuxt-link> and as a member of the community, we’d like to thank you for doing the Great Work and spreading the knowledge of <nuxt-link to="/natural-law/">Natural Law</nuxt-link>.
           </p>
           <p>
             As a token of gratitude and appreciation, <nuxt-link to="/initiation">we invite you to join our private server</nuxt-link> where we share knowledge and coordinate our actions in a real effort to make a larger impact and achieve real true awakening, freedom and abundance for all.
