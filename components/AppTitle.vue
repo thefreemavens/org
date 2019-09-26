@@ -75,7 +75,7 @@ export default {
   }
 }
 
-// a.title {
-//   color: $black;
-// }
+a .title {
+  color: $black;
+}
 </style>

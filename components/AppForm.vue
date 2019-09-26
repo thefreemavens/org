@@ -260,7 +260,6 @@ import axios from 'axios'
 export default {
   components: {
     AppButton
-    // axios
   },
   data: function() {
     return {

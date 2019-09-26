@@ -11,10 +11,14 @@
         />
       </nuxt-link>
       <div class="inner">
-        <app-title
-          text-before="The"
-          text="Freemavens"
-        />
+        <span
+          v-scroll-to="'#freemavenry'"
+          class="link">
+          <app-title
+            text-before="The"
+            text="Freemavens"
+          />
+        </span>
         <!-- <h1 class="title"><span class="pre">The</span><span>FreeMavens</span></h1> -->
         <!-- <p>For the well-being of all beings</p> -->
       </div>
@@ -26,6 +30,7 @@
 
     <section>
       <app-title
+        id="freemavenry"
         text-before="What is"
         text="Freemavenry"
       />
@@ -184,15 +189,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Freemavens | Freemavenry',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Freemavenry is a non-religious, non-political, fraternal and benevolent organization. Its roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, spirituality, symbology and consciousness.'
-        }
-      ]
+      title: 'Freemavenry'
     }
   }
 }

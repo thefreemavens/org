@@ -11,14 +11,16 @@
         />
       </nuxt-link>
       <div class="inner">
-        <a v-scroll-to="'#thanks'">
+        <span
+          v-scroll-to="'#thanks'"
+          class="link">
           <h1 class="title">
             <span class="pre">
               {{ name1 }} You Are Our
             </span>
             Newest hero
           </h1>
-        </a>
+        </span>
       </div>
     </section>
 
@@ -98,18 +100,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Freemavens | Private Invitation',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description'
-        }
-      ]
-    }
-  },
-  data() {
-    return {
-      // id: this.$route.query.id
+      title: 'Private Invitation'
     }
   },
   computed: {
@@ -214,17 +205,5 @@ export default {
       color: $grey-4;
     }
   }
-}
-
-a .title {
-  color: $black;
-}
-.litebox {
-  // background: lighten($brand, 36);
-  // padding: 26px 20px;
-  // color: $pure-black;
-  // border-radius: 6px;
-  // font-family: $font-alt;
-  // font-size: 14px;
 }
 </style>

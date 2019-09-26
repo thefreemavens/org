@@ -59,14 +59,7 @@ export default {
   },
   head() {
     return {
-      title: 'The Freemavens',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'The Free Mavens Organization Official Website.'
-        }
-      ]
+      title: 'Initiation'
     }
   }
 }

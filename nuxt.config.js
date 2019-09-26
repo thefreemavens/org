@@ -7,25 +7,25 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'The Freemavens',
+    titleTemplate: 'The Freemavens | %s',
+    // title: 'The Freemavens',
     meta: [
       { charset: 'utf-8' },
-      { name: 'description', content: 'Be a Maven @TheFreemavens. #freemavenry' },
-      { name: 'apple-mobile-web-app-title', content: 'TheFreemavens.org' },
-      { name: 'application-name', content: 'TheFreemavens.org' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Be a Maven @TheFreemavens. #freemavenry' },
       { hid: 'og:title', property: 'og:title', content: 'TheFreemavens.org'},
       { hid: 'og:url', property: 'og:url', content: 'https://thefreemavens.org'},
       { hid: 'og:image', property: 'og:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
       { hid: 'og:description', property: 'og:description', content: 'Be a Maven @TheFreemavens. #freemavenry'},
+      { name: 'apple-mobile-web-app-title', content: 'TheFreemavens.org' },
+      { name: 'application-name', content: 'TheFreemavens.org' },
       { name: 'twitter:card', content: 'summary_large_image'},
       { name: 'twitter:site', content: '@thefreemavens'},
       { name: 'twitter:title', content: 'TheFreemavens.org'},
       { name: 'twitter:description', content: 'Be a Maven @TheFreemavens https://thefreemavens.org #freemavenry'},
       { name: 'twitter:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'msapplication-TileColor', content: '#6342ff' },
-      { name: 'theme-color', content: '#ffffff' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'theme-color', content: '#ffffff' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

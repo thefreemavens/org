@@ -17,11 +17,15 @@
         </icon>
       </nuxt-link>
       <div class="inner">
-        <h1>
-          <!-- <span class="pre">The Real</span> -->
-          <span>Natural Law</span>
-        </h1>
-        <p>The real Law of Attraction and how to apply it in your life</p>
+        <span
+          v-scroll-to="'#about'"
+          class="link">
+          <h1>
+            <!-- <span class="pre">The Real</span> -->
+            <span>Natural Law</span>
+          </h1>
+          <p>The real Law of Attraction and how to apply it in your life</p>
+        </span>
       </div>
       <!-- <p class="desc">Free Seminar</p> -->
       <!-- <h3>Worldwide</h3> -->
@@ -31,6 +35,7 @@
 
     <section>
       <app-title
+        id="about"
         text-before="About The"
         text="Seminar"
       />
@@ -293,42 +298,9 @@ export default {
   },
   head() {
     return {
-      title: 'The Freemavens | Natural Law',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'The Real Law of Attraction and how to apply it in your life'
-        },
-        // {
-        //   hid: 'description',
-        //   name: 'description',
-        //   content: 'My custom description'
-        // }
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: 'Natural Law Seminar'
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: 'https://thefreemavens.org/natural-law'
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: 'https://thefreemavens.org/images/the-free-mavens-flag.jpg'
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: 'Natural Law Seminar'
-        }
-      ],
+      title: 'Natural Law',
       bodyAttrs: {
         class: 'dark-theme'
-        // class: this.modalOpen ? 'm-open' : 'm-close'
       }
     }
   }
