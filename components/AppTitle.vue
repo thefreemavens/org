@@ -1,5 +1,7 @@
 <template>
-  <h1 :class="titleSize">
+  <h1
+    v-scroll-reveal
+    :class="titleSize">
     <span
       v-if="textBefore"
       class="pre">

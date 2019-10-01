@@ -157,7 +157,9 @@
             />
             <episodes-li
               :number="5"
+              link="https://youtu.be/14di-kiGBEg"
               title="Teachability"
+              duration="5:08"
             />
             <episodes-li
               :number="6"
