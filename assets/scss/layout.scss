@@ -28,6 +28,24 @@
   }
 }
 
+.content-m {
+  max-width: 800px;
+  img {
+    cursor: zoom-in;
+    padding: 13px;
+  }
+  &.two-columns {
+    @include desktop {
+      max-width: 800px;
+      img {
+        &:first-of-type {
+          grid-column: 1/3;
+        }
+      }
+    }
+  }
+}
+
 // .layout {
 //   display: block;
 //   margin: 0 auto;

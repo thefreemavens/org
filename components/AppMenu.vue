@@ -12,7 +12,7 @@
         class="icon-inner"
       >
         <icon
-          icon-name="hex"
+          icon-name="Menu"
           icon-color="none"
           icon-stroke-color="#fff"
           icon-stroke-width="21"

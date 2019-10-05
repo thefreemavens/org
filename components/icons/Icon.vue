@@ -9,8 +9,7 @@
   >
     <title
       :id="iconName"
-      lang="en">{{ iconName }} icon
-    </title>
+      lang="en">{{ iconName }}</title>
     <g
       :fill="iconColor"
       :stroke="iconStrokeColor"

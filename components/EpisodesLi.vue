@@ -1,7 +1,7 @@
 <template>
   <li
     v-scroll-reveal="{ delay: 150 }"
-    v-if="link">
+    v-if="duration">
     <span class="number">
       Episode {{ number }}
       <span class="duration">
@@ -10,11 +10,7 @@
       </span>
     </span>
     <span>
-      <a
-        :href="link"
-        target="_blank">
-        {{ title }} 
-      </a>
+      <slot />
     </span>
   </li>
 
@@ -27,7 +23,7 @@
       Episode {{ number }}
     </span>
     <span>
-      {{ title }} 
+      <slot />
     </span>
   </li>
 </template>
@@ -44,10 +40,10 @@ export default {
       type: String,
       default: 'Episode Title'
     },
-    link: {
-      type: String,
-      default: ''
-    },
+    // link: {
+    //   type: String,
+    //   default: ''
+    // },
     duration: {
       type: String,
       default: ''

@@ -53,7 +53,7 @@ export default {
 .title {
   display: inline-block;
   @extend .h1;
-  @include fp(margin-top, 0, 99);
+  @include fp(margin-top, 0, 33);
   @include fp(margin-bottom, 33, 66);
   span {
     display: block;

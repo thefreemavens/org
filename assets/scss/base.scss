@@ -275,16 +275,16 @@ hr {
 //   opacity: 0;
 // }
 
-// // Layout transitions
-// .fade-enter-active,
-// .fade-leave-active {
-//   transition: opacity 0.33s ease-out;
-// }
+// Layout transitions
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.22s ease-in;
+}
 
-// .fade-enter,
-// .fade-leave-active {
-//   opacity: 0;
-// }
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
 
 // .fade-enter-active,
 // .fade-enter {

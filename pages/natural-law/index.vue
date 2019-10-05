@@ -133,74 +133,79 @@
           <ol>
             <episodes-li
               :number="1"
-              title="Before We Begin"
-              link="https://youtu.be/q8sQf-QtXbY"
               duration="3:33"
-            />
+            >
+              <nuxt-link to="/natural-law/episodes/before-we-begin/">Before We Begin</nuxt-link>
+            </episodes-li>
+
             <episodes-li
               :number="2"
-              title="Presentation Style"
-              link="https://youtu.be/qBvzoNi0d6c"
               duration="3:35"
-            />
+            >
+              <nuxt-link to="/natural-law/episodes/presentation-style/">Presentation Style</nuxt-link>
+            </episodes-li>
+
             <episodes-li
               :number="3"
-              title="Prerequisites"
-              link="https://youtu.be/RxBXdMfBE1A"
               duration="4:52"
-            />
+            >
+              <nuxt-link to="/natural-law/episodes/prerequisites/">Prerequisites</nuxt-link>
+            </episodes-li>
+
             <episodes-li
               :number="4"
-              link="https://youtu.be/c-2rPiG-V8o"
-              title="The Real Natural Law"
               duration="1:33"
-            />
+            >
+              <nuxt-link to="/natural-law/episodes/the-real-natural-law/">The Real Natural Law</nuxt-link>
+            </episodes-li>
+
             <episodes-li
               :number="5"
-              link="https://youtu.be/14di-kiGBEg"
-              title="Teachability"
               duration="5:08"
-            />
-            <episodes-li
-              :number="6"
-              title="Belief Systems"
-            />
-            <episodes-li
-              :number="7"
-              title="Requirements"
-            />
-            <episodes-li
-              :number="8"
-              title="The role of Knowledge"
-            />
-            <episodes-li
-              :number="9"
-              title="Occult Knowledge"
-            />
-            <episodes-li
-              :number="10"
-              title="Nescience vs. Ignorance"
-            />
-            <episodes-li
-              :number="11"
-              title="Why Are We Losing Freedom?"
-            />
-            <episodes-li
-              :number="12"
-              title="The Master Key"
-            />
-            <episodes-li
-              :number="13"
-              title="Problem Solving"
-            />
-            <episodes-li
-              :number="14"
-              title="What Truth is"
-            />
-            <episodes-li
-              number="15"
-              title="Truth vs. Perception"
-            />
+            >
+              <nuxt-link to="/natural-law/episodes/teachability/">Teachability</nuxt-link>
+            </episodes-li>
+
+            <episodes-li :number="6">
+              Belief Systems
+            </episodes-li>
+
+            <episodes-li :number="7">
+              Requirements
+            </episodes-li>
+
+            <episodes-li :number="8">
+              The role of Knowledge
+            </episodes-li>
+
+            <episodes-li :number="9">
+              Occult Knowledge
+            </episodes-li>
+
+            <episodes-li :number="10">
+              Nescience vs. Ignorance
+            </episodes-li>
+
+            <episodes-li :number="11">
+              Why Are We Losing Freedom?
+            </episodes-li>
+
+            <episodes-li :number="12">
+              The Master Key
+            </episodes-li>
+
+            <episodes-li :number="13">
+              Problem Solving
+            </episodes-li>
+
+            <episodes-li :number="14">
+              What Truth is
+            </episodes-li>
+
+            <episodes-li :number="15">
+              Truth vs. Perception
+            </episodes-li>
+
           </ol>
         </div>
       </div>
