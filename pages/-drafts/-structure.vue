@@ -261,6 +261,7 @@ import AppButton from '@/components/AppButton.vue'
 import AppDivider from '@/components/AppDivider.vue'
 
 export default {
+  layout: 'main',
   components: {
     AppPageTitle,
     AppBlockQuote,

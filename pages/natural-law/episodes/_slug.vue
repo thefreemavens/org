@@ -176,6 +176,7 @@ import IconSg8 from '@/components/icons/IconSg8'
 // import IconSg12 from '@/components/icons/IconSg12'
 import IconSg20 from '@/components/icons/IconSg20'
 import AppFooter from '@/components/AppFooter'
+// import {mapMutations} from 'vuex'
 
 export default {
   layout: 'main',
@@ -201,12 +202,8 @@ export default {
   },
   data() {
     return {
-      // src: '',
-      // note: '',
-      // index: '',
       lightbox: false,
       lightboxSlide: false,
-      // lightbox: true,
       slug: this.$route.params.slug,
       episodes: [
         {
@@ -221,7 +218,7 @@ export default {
           ],
           slides: [
             '/images/natural-law/01/freemavens-natural-law-01-before-we-begin-01.jpg'
-            // '/images/natural-law/02/freemavens-natural-law-02-presentation-style-02.jpg'
+            // ''
           ],
           images: []
         },
@@ -258,7 +255,7 @@ export default {
             `2. Be consciously aware of any impulses you may have to reject information presented solely based upon your initial emotional response to the information being presented.`,
             `It is a Logical Fallacy to gauge the veracity of any information based upon how you <b>FEEL</b> when first seeing or hearing it.`,
             `<hr>`,
-            `This seminar is a Tapestry. It is meant to be taken as a whole, in its entirety. I highly recommend that you stay for the duration of the seminar, otherwise you will most likely not recognize the patterns inherent to the tapestry, and will have wasted your time.`
+            `<b>IMPORTANT:</b> This seminar is a Tapestry. It is meant to be taken as a whole, in its entirety. I highly recommend that you stay for the duration of the seminar, otherwise you will most likely not recognize the patterns inherent to the tapestry, and will have wasted your time.`
           ],
           slides: [
             '/images/natural-law/03/freemavens-natural-law-prerequisites-01.jpg',
@@ -276,7 +273,7 @@ export default {
           notes: [],
           slides: [
             '/images/natural-law/04/freemavens-real-natural-law-01.jpg'
-            // '/images/natural-law/04/freemavens-real-natural-law-02.jpg',
+            // '',
           ],
           images: []
         },
@@ -334,6 +331,9 @@ export default {
     appTitleTextBefore() {
       return 'Episode ' + this.episode.eid
     }
+    // ...mapMutations({
+    //   toggle: 'lightbox/toggleLightbox'
+    // })
   }
 }
 </script>
@@ -389,25 +389,6 @@ export default {
   color: $grey-3;
 }
 
-// .episodes {
-//   ol {
-//     @extend .pure-list;
-//     text-align: center;
-//     margin-top: 12vh;
-//   }
-// }
-
-// .profile-image {
-//   display: block;
-//   margin: 4vh auto 2vh;
-//   background: url('/images/mark-passio.jpg') center center;
-//   background-size: cover;
-//   border-radius: 50%;
-//   border: 3px solid $white;
-//   @include fp(width, 96, 148);
-//   @include fp(height, 96, 148);
-// }
-
 section#video {
   @extend .flex;
   min-height: 100vh;
@@ -432,10 +413,4 @@ section#video {
     max-width: 1280px;
   }
 }
-
-// b.brand {
-//   // font: $font;
-//   font-size: 30px;
-//   color: $brand;
-// }
 </style>

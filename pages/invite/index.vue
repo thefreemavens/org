@@ -103,22 +103,27 @@ export default {
       title: 'Private Invitation'
     }
   },
+  data() {
+    return {
+      // inviteId: ''
+    }
+  },
   computed: {
-    id: function() {
+    id() {
       if (!this.$route.query.id) {
-        return '13060694015'
+        return '13060694016'
       } else {
         return this.$route.query.id
       }
     },
-    name1: function() {
+    name1() {
       if (!this.$route.query.name) {
         return ''
       } else {
         return this.$route.query.name + ', '
       }
     },
-    name2: function() {
+    name2() {
       if (!this.$route.query.name) {
         return 'friend'
       } else {
@@ -126,6 +131,16 @@ export default {
       }
     }
   }
+  // watch: {
+  //   id(newId) {
+  //     localStorage.id = newId
+  //   }
+  // },
+  // mounted() {
+  //   if (localStorage.id) {
+  //     this.id = localStorage.id
+  //   }
+  // }
 }
 </script>
 

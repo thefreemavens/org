@@ -102,7 +102,17 @@ module.exports = {
   ** Build configuration
   */
   generate: {
-    dir: 'docs'
+    dir: 'docs',
+    // fallback: "404.html",
+    routes: [
+      '/natural-law/episodes/before-we-begin',
+      '/natural-law/episodes/presentation-style',
+      '/natural-law/episodes/prerequisites',
+      '/natural-law/episodes/the-real-natural-law',
+      '/natural-law/episodes/teachability'
+      // '/natural-law/episodes/before'
+    ]
+    // dir: 'docs'
   },
   /*
   ** Build configuration

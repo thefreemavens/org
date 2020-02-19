@@ -133,36 +133,31 @@
           <ol>
             <episodes-li
               :number="1"
-              duration="3:33"
-            >
+              duration="3:33">
               <nuxt-link to="/natural-law/episodes/before-we-begin/">Before We Begin</nuxt-link>
             </episodes-li>
 
             <episodes-li
               :number="2"
-              duration="3:35"
-            >
+              duration="3:35">
               <nuxt-link to="/natural-law/episodes/presentation-style/">Presentation Style</nuxt-link>
             </episodes-li>
 
             <episodes-li
               :number="3"
-              duration="4:52"
-            >
+              duration="4:52">
               <nuxt-link to="/natural-law/episodes/prerequisites/">Prerequisites</nuxt-link>
             </episodes-li>
 
             <episodes-li
               :number="4"
-              duration="1:33"
-            >
+              duration="1:33">
               <nuxt-link to="/natural-law/episodes/the-real-natural-law/">The Real Natural Law</nuxt-link>
             </episodes-li>
 
             <episodes-li
               :number="5"
-              duration="5:08"
-            >
+              duration="5:08">
               <nuxt-link to="/natural-law/episodes/teachability/">Teachability</nuxt-link>
             </episodes-li>
 
