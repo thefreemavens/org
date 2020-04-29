@@ -97,3 +97,7 @@ dist
 sw.*
 
 node_modules
+
+# Project Specific:
+pages/-draft/*
+devnotes.shell

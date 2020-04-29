@@ -1,0 +1,7 @@
+export const state = () => ({
+  topics: [],
+  alexJones: [
+    { name: 'Andreas von Buelow', type: 'mp3' },
+    { name: 'Andreas von Buelow', type: 'mp3' },
+  ]
+})
