@@ -131,10 +131,8 @@
     <p
       class="legal">
       As to be understood from
-      <a
-        href="https://youtu.be/q8sQf-QtXbY"
-        target="_blank">
-      Episode 1</a>, what does the old saying "There is nothing new under the sun" means?
+      <NuxtLink to="../natural-law/episodes/before-we-begin/">
+      Episode 1</NuxtLink>, what does the old saying "There is nothing new under the sun" means?
     </p>
 
     <div
@@ -168,10 +166,8 @@
     <p
       class="legal">
       As to be understood from
-      <a
-        href="https://youtu.be/qBvzoNi0d6c"
-        target="_blank">
-      Episode 2</a>, Truth, by its very nature, is Beligerent. Why so?
+      <NuxtLink to="../natural-law/episodes/presentation-style/">
+      Episode 2</NuxtLink>, Truth, by its very nature, is Beligerent. Why so?
     </p>
 
     <div
@@ -203,10 +199,8 @@
     <p
       class="legal">
       As to be understood from
-      <a
-        href="https://youtu.be/RxBXdMfBE1A"
-        target="_blank">
-      Episode 3</a>, what is considered to be a Logical Fallacy?
+      <NuxtLink to="../natural-law/episodes/prerequisites/">
+      Episode 3</NuxtLink>, what is considered to be a Logical Fallacy?
     </p>
 
     <div

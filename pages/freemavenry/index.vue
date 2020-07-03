@@ -258,12 +258,12 @@ export default {
   margin-top: 4vh;
   margin-bottom: -6vh;
 }
-.litebox {
-  // background: lighten($brand, 36);
-  // padding: 26px 20px;
-  // color: $pure-black;
-  // border-radius: 6px;
-  // font-family: $font-alt;
-  // font-size: 14px;
-}
+// .litebox {
+//   background: lighten($brand, 36);
+//   padding: 26px 20px;
+//   color: $pure-black;
+//   border-radius: 6px;
+//   font-family: $font-alt;
+//   font-size: 14px;
+// }
 </style>

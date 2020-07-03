@@ -10,31 +10,69 @@ module.exports = {
     titleTemplate: 'The Freemavens | %s',
     // title: 'The Freemavens',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Be a Maven @TheFreemavens. #freemavenry' },
-      { hid: 'og:title', property: 'og:title', content: 'TheFreemavens.org'},
-      { hid: 'og:url', property: 'og:url', content: 'https://thefreemavens.org'},
-      { hid: 'og:image', property: 'og:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
-      { hid: 'og:description', property: 'og:description', content: 'Be a Maven @TheFreemavens. #freemavenry'},
-      { name: 'apple-mobile-web-app-title', content: 'TheFreemavens.org' },
-      { name: 'application-name', content: 'TheFreemavens.org' },
-      { name: 'twitter:card', content: 'summary_large_image'},
-      { name: 'twitter:site', content: '@thefreemavens'},
-      { name: 'twitter:title', content: 'TheFreemavens.org'},
-      { name: 'twitter:description', content: 'Be a Maven @TheFreemavens https://thefreemavens.org #freemavenry'},
-      { name: 'twitter:image', content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'},
-      { name: 'msapplication-TileColor', content: '#6342ff' },
-      { name: 'theme-color', content: '#ffffff' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Be a Maven @TheFreemavens. #freemavenry'
+      },
+      {hid: 'og:title', property: 'og:title', content: 'TheFreemavens.org'},
+      {hid: 'og:url', property: 'og:url', content: 'https://thefreemavens.org'},
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Be a Maven @TheFreemavens. #freemavenry'
+      },
+      {name: 'apple-mobile-web-app-title', content: 'TheFreemavens.org'},
+      {name: 'application-name', content: 'TheFreemavens.org'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:site', content: '@thefreemavens'},
+      {name: 'twitter:title', content: 'TheFreemavens.org'},
+      {
+        name: 'twitter:description',
+        content:
+          'Be a Maven @TheFreemavens https://thefreemavens.org #freemavenry'
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://thefreemavens.org/images/thefreemavens-poster.jpg'
+      },
+      {name: 'msapplication-TileColor', content: '#6342ff'},
+      {name: 'theme-color', content: '#ffffff'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-      { rel: 'manifest', href: '/site.webmanifest' },
-      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#6342ff' },
-      { rel: 'sitemap', href: '/sitemap.xml', type: 'application/xml', title: 'Sitemap' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png'
+      },
+      {rel: 'manifest', href: '/site.webmanifest'},
+      {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#6342ff'},
+      {
+        rel: 'sitemap',
+        href: '/sitemap.xml',
+        type: 'application/xml',
+        title: 'Sitemap'
+      }
       // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500,700' }
     ]
   },
@@ -60,7 +98,7 @@ module.exports = {
   plugins: [
     '~plugins/vue-scrollto.js',
     // { src: '~plugins/ga.js', ssr: false },
-    { src: '~/plugins/vue-scroll-reveal', ssr: false }
+    {src: '~/plugins/vue-scroll-reveal', ssr: false}
   ],
 
   /*
@@ -75,9 +113,7 @@ module.exports = {
     '@nuxtjs/google-analytics'
   ],
   styleResources: {
-    scss: [
-      './assets/scss/main.scss'
-    ],
+    scss: ['./assets/scss/main.scss']
   },
   pwa: {
     icon: false,
