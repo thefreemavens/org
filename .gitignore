@@ -90,6 +90,6 @@ sw.*
 *.swp
 
 # Project Specific:
-docs/
+# docs/
 pages/-draft/*
 devnotes.shell
