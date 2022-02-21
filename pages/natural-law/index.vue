@@ -8,10 +8,9 @@
       class="container mx-auto min-h-screen text-center flex flex-col items-center justify-center"
     >
       <icon
-        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 stroke-current stroke-12 text-white"
+        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 stroke-current stroke-8 md:stroke-10 lg:stroke-12 text-white"
         icon-name="natural-law"
         icon-color="none"
-        icon-stroke-width="10px"
       >
         <icon-natural-law />
       </icon>
