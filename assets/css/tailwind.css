@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base: Forms */
+@layer base {
+  .form-group {
+    @apply text-left mb-3;
+    & .error {
+      @apply text-sm;
+    }
+  }
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply rounded-lg w-full my-0.5 py-3 px-3 text-xl leading-tight;
+    @apply text-gray-900 dark:text-gray-100;
+    @apply bg-gray-50 dark:bg-gray-700;
+    @apply border border-gray-200 dark:border-gray-900;
+    @apply focus:border-primary focus:ring-brand-500 focus:ring-2;
+  }
+  label {
+    @apply text-gray-500;
+  }
+}
+
+/* Base: Styles */
+@layer base {
+  body {
+    @apply font-sans transition-colors duration-300 ease-in-out;
+    @apply text-gray-900 bg-white;
+    @apply dark:text-gray-100 dark:bg-gray-800;
+  }
+  .wrap {
+    @apply max-w-xl md:max-w-2xl lg:max-w-5xl mx-auto px-6;
+  }
+  .wrap > .title {
+    @apply mt-12 md:mt-14 lg:mt-16;
+    @apply mb-4 md:mb-6 lg:mb-8;
+  }
+  .icon-wrap {
+    @apply mb-10 md:mb-12 lg:mb-16 text-center;
+  }
+  .title-icon {
+    @apply text-black dark:text-white;
+    @apply stroke-current stroke-8 md:stroke-10 lg:stroke-10;
+    @apply w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20;
+  }
+  .content {
+    @apply mx-auto w-full;
+    &.cols {
+      @apply grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 pb-10;
+    }
+  }
+}
+
+/* Components */
+@layer components {
+  .emp-div {
+    @apply bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 px-6 py-4 rounded-lg block shadow;
+  }
+  .emp-text {
+    @apply block font-serif text-gray-900 dark:text-gray-50 text-lg md:text-xl;
+    &--uc {
+      @apply uppercase tracking-wide-xl block;
+    }
+  }
+}
+
+*:focus {
+  @apply outline-none;
+  /* @apply ring-primary ring-4; */
+}
+
+/* CSS Transitions */
+
+.page-enter-active,
+.page-leave-active,
+.layout-enter-active,
+.layout-leave-active {
+  @apply transition-opacity duration-300 ease-in-out;
+}
+
+.page-enter,
+.page-leave-to,
+.layout-enter,
+.layout-leave-to {
+  @apply opacity-0;
+}
+
+/* Large (lg) */
+/* @screen lg {
+  .content.two-columns {
+    @apply grid grid-cols-2 gap-10 max-w-4xl;
+  }
+} */
+
+p {
+  @apply text-gray-550 dark:text-gray-400;
+  /* @apply md:text-lg leading-loose; */
+  & + p {
+    @apply mt-6;
+  }
+}
+
+a {
+  @apply no-underline transition-colors duration-300 ease-in-out;
+  @apply focus:bg-primary focus:text-white hover:focus:text-white active:bg-brand-600;
+  @apply active:bg-brand-600;
+}
+
+p a {
+  @apply text-primary;
+  &:hover {
+    @apply text-brand-400;
+  }
+}
+
+/* ::selection {
+  @apply bg-brand-500;
+}
+::-moz-selection {
+  @apply bg-brand-500;
+} */
