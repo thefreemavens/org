@@ -31,9 +31,9 @@
       <div v-show="active">
         <div class="knowledge">
           <div class="video">
-            <div class="video-inner">
-              <app-video :video-id="vid" />
-            </div>
+            <!-- <div class="video-inner"> -->
+            <app-video :video-id="vid" />
+            <!-- </div> -->
           </div>
           <!-- <div class="video p-2">
             <h4>Video</h4>
@@ -163,8 +163,6 @@ export default {
   @apply flex content-around flex-col;
   @apply w-full px-4 pt-4 mb-4 block;
   @apply border-t border-gray-100 dark:border-gray-550;
-  /* @apply border-t border-gray-100 dark:border-gray-600 dark:group-hover:border-gray-550; */
-  /* @apply border-t border-gray-100 dark:hover:border-gray-550; */
   @apply transition-colors duration-300 ease-in-out;
 }
 
@@ -189,12 +187,9 @@ export default {
 }
 
 .video {
-  @apply flex items-center justify-center h-96;
-  .video-inner {
-    /* @apply block w-full h-full;
-    max-height: 450px;
-    max-width: 800px; */
-  }
+  @apply block w-full h-full mx-auto;
+  max-height: 450px;
+  max-width: 800px;
 }
 
 footer {
