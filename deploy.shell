@@ -6,7 +6,7 @@
 set -e
 
 # build
-npm run generate
+yarn generate
 
 # commit
 git add -A
@@ -15,4 +15,4 @@ git push -f
 # git subtree push --prefix dist origin master
 # git subtree push --prefix dist origin gh-pages
 
-git add --force docs/
+# git add --force docs/
